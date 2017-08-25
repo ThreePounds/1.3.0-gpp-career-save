@@ -10,7 +10,7 @@ GAME
 	Seed = 928272640
 	scene = 5
 	editor = None
-	flag = ThreePounds/Flags/logo_mono_dark
+	flag = ThreePounds/Flags/flag
 	launchID = 2
 	modded = True
 	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe -popupwindow - 
@@ -119,8 +119,8 @@ GAME
 			DisplayOfferedWaypoints = True
 			DisplayActiveWaypoints = True
 			ActiveContractMultiplier = 1
-			lastMCButton = Active
-			lastMCButton = Active
+			lastMCButton = Available
+			lastMCButton = Available
 		}
 		ResearchBodies_SettingsParms
 		{
@@ -219,12 +219,12 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 92804.058076284971
+		update = 92050.458166516255
 		version = 1.3.0
 		WEIGHTS
 		{
 			ConfiguredContract = 30
-			SurveyContract = 42
+			SurveyContract = 30
 			StationContract = 30
 			SentinelContract = 30
 			SatelliteContract = 30
@@ -234,7 +234,7 @@ GAME
 			ARMContract = 30
 			RecoverAsset = 30
 			PlantFlag = 30
-			PartTest = 42
+			PartTest = 30
 			GrandTour = 30
 			Grannus = 30
 			Leto = 30
@@ -263,187 +263,11 @@ GAME
 			Augustus = 30
 			Eta = 30
 			Ceti = 30
-			Gael = 66
+			Gael = 42
 			Ciro = 30
 		}
 		CONTRACTS
 		{
-			CONTRACT
-			{
-				guid = 1e0899f2-d048-436d-acf7-344064be4ab1
-				type = SurveyContract
-				prestige = 0
-				seed = -806758392
-				state = Active
-				viewed = Read
-				agent = Sean's Cannery
-				deadlineType = Floating
-				expiryType = Floating
-				values = 41941.7495727539,44667963.2949829,7724.99978542328,14329.8739511967,7874.99964237213,0,1.904762,2,134024.047739277,92727.5180762694,44760690.8130592,0
-				targetBody = 1
-				centerLatitude = 7.2868206793752872
-				centerLongitude = -170.82231321779116
-				dataName = atmospheric
-				anomalyName = abnormalities
-				reportName = readings
-				locationName = Gael^N
-				focusedSurvey = True
-				targetBand = LOW
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Take pressure readings
-					experiment = barometerScan
-					flightThreshold = 18500
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -262450857
-					wpIndex = 0
-					wpTexture = pressure
-					wpLatitude = 7.2867990546360586
-					wpLongitude = -170.82228488886693
-					wpLandlocked = False
-					wpNavigationId = 493ee872-a572-45e1-928c-10630c52280a
-				}
-			}
-			CONTRACT
-			{
-				guid = e66e31af-aa20-4817-b88c-900796065f49
-				type = SurveyContract
-				prestige = 0
-				seed = -806758384
-				state = Offered
-				viewed = Read
-				agent = Integrated Integrals
-				deadlineType = Floating
-				expiryType = Floating
-				values = 64158.4160327911,45552475.3832817,7426.47052696523,13776.1022019055,7874.99964237213,0,1.942857,2,156240.714199314,0,0,0
-				targetBody = 1
-				centerLatitude = 9.8832188297354335
-				centerLongitude = -168.06283803379574
-				dataName = atmospheric
-				anomalyName = abnormalities
-				reportName = readings
-				locationName = Gael^N
-				focusedSurvey = True
-				targetBand = LOW
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Take pressure readings
-					experiment = barometerScan
-					flightThreshold = 18700
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -1865243879
-					wpIndex = 0
-					wpTexture = pressure
-					wpLatitude = 9.8832379729522017
-					wpLongitude = -168.0627976863519
-					wpLandlocked = False
-					wpNavigationId = be9750d3-7903-42b8-898a-2e2b34797c9c
-				}
-			}
-			CONTRACT
-			{
-				guid = 8fe1019c-8e6d-40d0-889f-3b2b4041ebb2
-				type = SurveyContract
-				prestige = 0
-				seed = -806758379
-				state = Offered
-				viewed = Read
-				agent = StrutCo
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,46008000,7500,13912.4993681908,7874.99964237213,0,1.904762,2,135282.298166523,0,0,0
-				targetBody = 1
-				centerLatitude = 7.5586581647500495
-				centerLongitude = -167.69445062709025
-				dataName = temperature
-				anomalyName = fluctuations
-				reportName = measurements
-				locationName = Gael^N
-				focusedSurvey = True
-				targetBand = LOW
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 17800
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -1241614690
-					wpIndex = 0
-					wpTexture = thermometer
-					wpLatitude = 7.5586584228584366
-					wpLongitude = -167.69446472322878
-					wpLandlocked = False
-					wpNavigationId = e1f5f9da-a7a5-41d0-872f-58806c1a57f8
-				}
-			}
-			CONTRACT
-			{
-				guid = c3fe87ce-cc20-48ac-990f-7a97740ce254
-				type = SurveyContract
-				prestige = 0
-				seed = -938861222
-				state = Offered
-				viewed = Read
-				agent = Experimental Engineering Group
-				deadlineType = Floating
-				expiryType = Floating
-				values = 128316.832065582,45552475.3832817,7574.99992847443,14051.6242291927,7874.99964237213,0,1.904762,2,220399.170232105,0,0,0
-				targetBody = 1
-				centerLatitude = 9.1119615746666582
-				centerLongitude = -157.725386969856
-				dataName = temperature
-				anomalyName = fluctuations
-				reportName = measurements
-				locationName = Gael^N
-				focusedSurvey = True
-				targetBand = HIGH
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 17300
-					band = 3
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -1844866579
-					wpIndex = 0
-					wpTexture = thermometer
-					wpLatitude = 9.1119214512970483
-					wpLongitude = -157.72540980732862
-					wpLandlocked = False
-					wpNavigationId = 53d59627-0f0c-4e1f-84e1-782d0797c2e5
-				}
-			}
 			CONTRACT
 			{
 				guid = 1caee63b-63f6-465d-91bb-681f6f665cf0
@@ -466,6 +290,54 @@ GAME
 					values = 6400,0,1,2,0
 					targetBody = 1
 					targetType = SCIENCE
+				}
+			}
+			CONTRACT
+			{
+				guid = 75d2189a-c9ff-4e20-be42-30323bc5ebd1
+				type = ExplorationContract
+				prestige = 0
+				seed = -1415369729
+				state = Active
+				viewed = Read
+				agent = Gaelean Historians Collective
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 129600,0,1120,2080,1120,1,1,0,129600.06,190.800000000024,0,0
+				targetBody = 1
+				bodyRatio = 0
+				PARAM
+				{
+					name = ProgressTrackingParameter
+					state = Incomplete
+					values = 3200,0,1,1,0
+					targetBody = 1
+					targetType = FIRSTLAUNCH
+				}
+			}
+			CONTRACT
+			{
+				guid = 9d9e8a7f-1788-4a4a-a47e-9b2729308aec
+				type = ExplorationContract
+				prestige = 2
+				seed = -1415369705
+				state = Offered
+				viewed = Seen
+				agent = Gaelean Historians Collective
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 129600,0,16800,31200,16800,6,10,0,129600.06,0,0,0
+				targetBody = 1
+				bodyRatio = 0
+				PARAM
+				{
+					name = ProgressTrackingParameter
+					state = Incomplete
+					values = 48000,0,6,10,0
+					targetBody = 1
+					targetType = ORBIT
 				}
 			}
 			CONTRACT
@@ -521,7 +393,7 @@ GAME
 					{
 						name = ParameterDelegate`1
 						id = Situation: Landed
-						state = Incomplete
+						state = Complete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = FieldResearch.FS_KSC
@@ -599,7 +471,7 @@ GAME
 					{
 						name = ParameterDelegate`1
 						id = Situation: Landed
-						state = Incomplete
+						state = Complete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = FieldResearch.FS_KSC
@@ -677,7 +549,7 @@ GAME
 					{
 						name = ParameterDelegate`1
 						id = Situation: Landed
-						state = Incomplete
+						state = Complete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = FieldResearch.FS_KSC
@@ -755,7 +627,7 @@ GAME
 					{
 						name = ParameterDelegate`1
 						id = Situation: Landed
-						state = Incomplete
+						state = Complete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = FieldResearch.FS_KSC
@@ -803,262 +675,26 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 7401d95c-554d-4481-8fda-c7009893d835
-				type = PartTest
-				prestige = 0
-				seed = -806758394
-				state = Offered
-				viewed = Seen
-				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
-				deadlineType = Floating
-				expiryType = Floating
-				values = 20377.3568630219,8680754.02364731,4999.9999165535,13124.9991849065,5669.99974250793,2,4.275631,2.941176,112459.655029545,0,0,0
-				part = hybridBooster
-				haul = False
-				dest = 1
-				sit = SPLASHED
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = hybridBooster
-					body = Gael
-					situation = SPLASHED
-					uniqueID = 0.95226815806341736
-					haul = False
-					repeatability = ONCEPERPART
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = SPLASHED
-						title = 
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 3b6a9cd6-c8b6-4951-841b-b0d758cb5d1a
-				type = PartTest
-				prestige = 1
-				seed = -806758365
-				state = Active
-				viewed = Read
-				agent = Research & Development Department
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,9201600,8438,21094,8438,2,5,4,135282.298166523,92691.118076262,9294291.11807626,0
-				part = SmallGearBay
-				haul = True
-				dest = 1
-				sit = FLYING
-				exp = False
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					part = SmallGearBay
-					body = Gael
-					situation = FLYING
-					uniqueID = 0.12538527051237658
-					haul = True
-					repeatability = ONCEPERPART
-				}
-				PARAM
-				{
-					name = ReachDestination
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					dest = 1
-					title = 
-				}
-				PARAM
-				{
-					name = ReachSituation
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					sit = FLYING
-					title = 
-				}
-			}
-			CONTRACT
-			{
-				guid = f9e7dc47-413e-4b2b-8645-f8a93ef513b5
-				type = PartTest
-				prestige = 1
-				seed = -1891993034
-				state = Offered
-				viewed = Read
-				agent = Kerbal Motion LLC
-				deadlineType = Floating
-				expiryType = Floating
-				values = 21600,9201600,16875,42188,16875,5,11,9,113786.118166544,0,0,0
-				part = roverWheel1
-				haul = True
-				dest = 1
-				sit = ORBITING
-				exp = True
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = roverWheel1
-					body = Gael
-					situation = ORBITING
-					uniqueID = 0.27422556107594892
-					haul = True
-					repeatability = ONCEPERPART
-				}
-				PARAM
-				{
-					name = ReachDestination
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					dest = 1
-					title = 
-				}
-				PARAM
-				{
-					name = ReachSituation
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					sit = ORBITING
-					title = 
-				}
-			}
-			CONTRACT
-			{
-				guid = 22092a26-d59c-4b5d-b541-82a7fb9404e9
-				type = PartTest
-				prestige = 1
-				seed = -806758349
-				state = Offered
-				viewed = Seen
-				agent = Research & Development Department
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,9201600,11250,28125,11250,4,8,5,135282.298166523,0,0,0
-				part = solidBooster.sm
-				haul = False
-				dest = 1
-				sit = FLYING
-				exp = False
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = solidBooster.sm
-					body = Gael
-					situation = FLYING
-					uniqueID = 0.90485782311524166
-					haul = False
-					repeatability = ONCEPERPART
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = FLYING
-						title = 
-					}
-					PARAM
-					{
-						name = ReachAltitudeEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minAlt = 25000
-						maxAlt = 28000
-					}
-					PARAM
-					{
-						name = ReachSpeedEnvelope
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						minSpd = 500
-						maxSpd = 570
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 9d9e8a7f-1788-4a4a-a47e-9b2729308aec
+				guid = 87c3cfff-400d-4035-b0a1-57046411d21a
 				type = ExplorationContract
-				prestige = 2
-				seed = -1415369705
+				prestige = 1
+				seed = -168717180
 				state = Offered
-				viewed = Seen
+				viewed = Unseen
 				agent = Gaelean Historians Collective
 				deadlineType = None
 				expiryType = Floating
 				ignoresWeight = True
-				values = 129600,0,16800,31200,16800,6,10,0,129600.06,0,0,0
+				values = 43200,0,11200,20800,11200,4,8,0,135153.845517578,0,0,0
 				targetBody = 1
 				bodyRatio = 0
 				PARAM
 				{
 					name = ProgressTrackingParameter
 					state = Incomplete
-					values = 48000,0,6,10,0
+					values = 32000,0,4,8,0
 					targetBody = 1
-					targetType = ORBIT
-				}
-			}
-			CONTRACT_FINISHED
-			{
-				guid = 75d2189a-c9ff-4e20-be42-30323bc5ebd1
-				type = ExplorationContract
-				prestige = 0
-				seed = -1415369729
-				state = Completed
-				viewed = Read
-				agent = Gaelean Historians Collective
-				deadlineType = None
-				expiryType = Floating
-				ignoresWeight = True
-				values = 129600,0,1120,2080,1120,1,1,0,129600.06,190.800000000024,0,0
-				targetBody = 1
-				bodyRatio = 0
-				PARAM
-				{
-					name = ProgressTrackingParameter
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					targetBody = 1
-					targetType = FIRSTLAUNCH
+					targetType = REACHSPACE
 				}
 			}
 		}
@@ -1073,7 +709,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 183441.25362454948
+		funds = 28085
 	}
 	SCENARIO
 	{
@@ -1081,10 +717,6 @@ GAME
 		scene = 7, 8, 5
 		Progress
 		{
-			FirstLaunch
-			{
-				completedUnmanned = 92082.298166522742
-			}
 			FirstCrewToSurvive
 			{
 				completed = 231.28000000004451
@@ -1093,50 +725,13 @@ GAME
 					crews = Jack Gaelan
 				}
 			}
-			RecordsAltitude
-			{
-				completed = 92186.018166543872
-				record = 70000
-			}
-			RecordsSpeed
-			{
-				reached = 92120.778166530581
-				record = 1216.1996423448604
-			}
-			RecordsDistance
-			{
-				reached = 92431.83791264506
-				record = 15190.411466950522
-			}
-			ReachedSpace
-			{
-				completedUnmanned = 92186.05816654388
-				vessel
-				{
-					name = Ambassador Mk1
-					flag = ThreePounds/Flags/flag
-				}
-			}
-			Gael
-			{
-				reached = 92492.938076221588
-				Landing
-				{
-					completedUnmanned = 92492.938076221588
-					vessel
-					{
-						name = Ambassador Mk1 Debris
-						flag = ThreePounds/Flags/flag
-					}
-				}
-			}
 		}
 	}
 	SCENARIO
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 11
+		sci = 0
 		Tech
 		{
 			id = start
@@ -1155,69 +750,6 @@ GAME
 			part = longAntenna
 			part = SurfAntenna
 		}
-		Tech
-		{
-			id = earlyAviation
-			state = Available
-			cost = 4
-			part = RetroMk1inline
-			part = SmallGearBay
-			part = GearFree
-			part = GearFixed
-			part = telescopicLadder
-			part = Mk1FuselageStructural
-			part = MK1Fuselage
-			part = winglet3
-			part = winglet
-			part = airplaneTailB
-			part = airplaneTail
-			part = tailfin
-			part = sweptWing
-			part = CanardController
-			part = noseCone
-			part = spadprop
-			part = miniFuselage
-		}
-		Tech
-		{
-			id = modularWings
-			state = Available
-			cost = 1
-			part = sweptWing2
-			part = sweptWing1
-			part = structuralWing4
-			part = structuralWing3
-			part = structuralWing2
-			part = structuralWing
-			part = wingStrake
-			part = elevon5
-			part = smallCtrlSrf
-			part = elevon3
-			part = elevon2
-			part = StandardCtrlSrf
-			part = delta.small
-			part = deltaWing
-			part = wingConnector5
-			part = wingConnector4
-			part = wingConnector3
-			part = wingConnector2
-			part = wingConnector
-			part = wingShuttleStrake
-			part = wingShuttleRudder
-			part = wingShuttleElevon2
-			part = wingShuttleElevon1
-			part = wingShuttleDelta
-		}
-		Science
-		{
-			id = temperatureScan@GaelSrfLandedLaunchPad
-			title = Temperature Scan from LaunchPad
-			dsc = 1
-			scv = 1
-			sbv = 0.300000012
-			sci = 0
-			cap = 0.900000036
-		}
 	}
 	SCENARIO
 	{
@@ -1228,7 +760,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 31.4996166
+		rep = 2.49963498
 	}
 	SCENARIO
 	{
@@ -1517,195 +1049,6 @@ GAME
 	{
 		name = ContractPreLoader
 		scene = 7, 8, 5
-		CONTRACT
-		{
-			guid = 0076ace1-70be-4d37-98c1-7e89a9899eb1
-			type = ConfiguredContract
-			prestige = 1
-			seed = 1921575386
-			state = Offered
-			viewed = Unseen
-			agent = Field Research Team
-			deadlineType = None
-			expiryType = Floating
-			ignoresWeight = True
-			values = 1530240,0,0,48036,0,0,13,0,1622836.85807624,0,0,0
-			subtype = FS_HardScience
-			title = Gather rare science results from Gael's Pligia Shores
-			description = They say there isn't much land at Gael's Pligia Shores.  We've mapped out a few locations where there might be some.  Find a suitable spot and run some experiments.
-			synopsis = Run the requested experiments in while landed at Gael's Pligia Shores.
-			completedMessage = This is some great data that we've accumulated!
-			hash = -1436622697
-			targetBody = Gael
-			BEHAVIOUR
-			{
-				type = ContractConfigurator.Behaviour.WaypointGenerator
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = Suggested Pligia Shores Landing
-					celestialName = Gael
-					name = Suggested Pligia Shores Landing
-					icon = ContractPacks/FieldResearch/Icons/research
-					latitude = 34.7607421875
-					longitude = 138.73535156250003
-					altitude = 0
-					index = 0
-					hidden = False
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = Suggested Pligia Shores Landing
-					celestialName = Gael
-					name = Suggested Pligia Shores Landing
-					icon = ContractPacks/FieldResearch/Icons/research
-					latitude = -19.7314453125
-					longitude = 141.9873046875
-					altitude = 0
-					index = 1
-					hidden = False
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-				WAYPOINT
-				{
-					type = WAYPOINT
-					names = Suggested Pligia Shores Landing
-					celestialName = Gael
-					name = Suggested Pligia Shores Landing
-					icon = ContractPacks/FieldResearch/Icons/research
-					latitude = -34.5849609375
-					longitude = 151.4794921875
-					altitude = 0
-					index = 2
-					hidden = False
-					clustered = False
-					randomAltitude = False
-					underwater = False
-				}
-			}
-			PARAM
-			{
-				name = CollectScienceCustom
-				id = CollectScience
-				state = Incomplete
-				disableOnStateChange = False
-				values = 0,0,0,0,0
-				ContractIdentifier = FieldResearch.FS_HardScience
-				title = 
-				notes = 
-				completedMessage = 
-				allowStateReset = False
-				targetBody = Gael
-				biome = PligiaShores
-				situation = SrfLanded
-				experiment = telemetryReport
-				experiment = evaReport
-				experiment = temperatureScan
-				recoveryMethod = None
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Biome: Gael's Pligia Shores
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Biome: Gael's Pligia Shores
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Situation: Landed
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Situation: Landed
-					notes = 
-					completedMessage = 
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Telemetry Report
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Experiment: Telemetry Report
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = telemetryReportSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = FieldResearch.FS_HardScience
-						title = 
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: EVA Report
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Experiment: EVA Report
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = evaReportSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = FieldResearch.FS_HardScience
-						title = 
-						notes = 
-						completedMessage = 
-					}
-				}
-				PARAM
-				{
-					name = ParameterDelegate`1
-					id = Experiment: Temperature Scan
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					ContractIdentifier = FieldResearch.FS_HardScience
-					title = Experiment: Temperature Scan
-					notes = 
-					completedMessage = 
-					PARAM
-					{
-						name = ParameterDelegate`1
-						id = temperatureScanSubject
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = FieldResearch.FS_HardScience
-						title = 
-						notes = 
-						completedMessage = 
-					}
-				}
-			}
-		}
 	}
 	SCENARIO
 	{
@@ -1762,7 +1105,7 @@ GAME
 				isResearched = True
 				researchState = 100
 				ignore = True
-				ContractsWeight = 30
+				ContractsWeight = 42
 			}
 			BODY
 			{
@@ -1770,7 +1113,7 @@ GAME
 				isResearched = True
 				researchState = 100
 				ignore = True
-				ContractsWeight = 30
+				ContractsWeight = 10
 			}
 			BODY
 			{
@@ -1818,7 +1161,7 @@ GAME
 				isResearched = True
 				researchState = 100
 				ignore = True
-				ContractsWeight = 30
+				ContractsWeight = 10
 			}
 			BODY
 			{
@@ -1826,7 +1169,7 @@ GAME
 				isResearched = True
 				researchState = 100
 				ignore = True
-				ContractsWeight = 30
+				ContractsWeight = 10
 			}
 			BODY
 			{
@@ -2250,10 +1593,9 @@ GAME
 			ProbeFrenzy1 = False
 			ProbeFrenzy2 = False
 			ProbeFrenzy3 = False
-			LocalScience1 = True
+			LocalScience1 = False
 			LocalScience2 = False
 			LocalScience3 = False
-			Local Science I = True
 		}
 		MSG_STRATEGIES
 		{
@@ -2325,11 +1667,1074 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.3.0
-		UT = 92811.238076286434
+		UT = 92057.938166517779
 		activeVessel = 0
 		mapViewFiltering = -1026
 		commNetUIModeTracking = Network
 		commNetUIModeFlight = Path
+		VESSEL
+		{
+			pid = 8207f270e1ed4be3b3f6188c13edd481
+			name = Ambassador Mk1
+			type = Probe
+			sit = PRELAUNCH
+			landed = True
+			landedAt = LaunchPad
+			displaylandedAt = #autoLOC_6002112
+			splashed = False
+			met = 0
+			lct = 92057.918166517775
+			lastUT = 92057.938166517779
+			root = 0
+			lat = 8.6401623612597529
+			lon = -168.17678976372602
+			alt = 45.438155852258205
+			hgt = 2.56081176
+			nrm = 1.40070915E-06,0.99999994,1.90734863E-06
+			rot = -0.504953325,0.477198184,0.412201703,0.589401186
+			CoM = 1.43051147E-06,-1.45093751,2.38418579E-06
+			stg = 1
+			prst = False
+			ref = 3618078616
+			ctrl = True
+			cPch = 0.276
+			cHdg = -0.002000294
+			cMod = 0
+			ORBIT
+			{
+				SMA = 300786.76191496453
+				ECC = 0.99491488055709887
+				INC = 8.6401623621381063
+				LPE = 269.99994064181806
+				LAN = 127.1235464306987
+				MNA = -3.1415926199010977
+				EPH = 92057.918166517775
+				REF = 1
+			}
+			PART
+			{
+				name = probeCoreOcto
+				cid = 4293306780
+				uid = 3618078616
+				mid = 1150169452
+				launchID = 1
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				attN = bottom, 2
+				attN = top, 1
+				mass = 0.0799999982
+				shielded = False
+				temp = 293.31555815767831
+				tempExt = 293.33026983859469
+				tempExtUnexp = 293.33021699783393
+				expt = 0
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = ThreePounds/Flags/flag
+				rTrf = probeCoreOcto
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					hibernation = False
+					hibernateOnWarp = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						HibernateToggle
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					actuatorModeCycle = 0
+					authorityLimiter = 100
+					stateString = Idle
+					stagingEnabled = True
+					WheelState = Active
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						CycleAction
+						{
+							actionGroup = None
+						}
+						Activate
+						{
+							actionGroup = None
+						}
+						Deactivate
+						{
+							actionGroup = None
+						}
+						Toggle
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKerbNetAccess
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						OpenKerbNetAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDataTransmitter
+					isEnabled = True
+					xmitIncomplete = False
+					stagingEnabled = True
+					canComm = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						StartTransmissionAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FMRS_PM
+					isEnabled = True
+					stagingEnabled = True
+					MM_DYNAMIC = true
+					parent_vessel = 00000000-0000-0000-0000-000000000000
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+						}
+						ResetAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceContainer
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						CollectAllAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSAS
+					isEnabled = True
+					standaloneToggle = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					Log
+					{
+						flight = 0
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 198.89760002463743
+					maxAmount = 200
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = standardNoseCone
+				cid = 4293301050
+				uid = 2188794616
+				mid = 1150169452
+				launchID = 1
+				parent = 0
+				position = 0,0.43708109855651855,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 0
+				srfN = srfAttach, -1
+				attN = bottom01, 0
+				mass = 0.00999999978
+				shielded = False
+				temp = 293.31875335287043
+				tempExt = 293.40899435201902
+				tempExtUnexp = 293.40894165519859
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = ThreePounds/Flags/flag
+				rTrf = standardNoseCone
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FMRS_PM
+					isEnabled = True
+					stagingEnabled = True
+					MM_DYNAMIC = true
+					parent_vessel = 00000000-0000-0000-0000-000000000000
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = adapterSmallMiniTall
+				cid = 4293302452
+				uid = 3495390295
+				mid = 1150169452
+				launchID = 1
+				parent = 0
+				position = 0,-0.49958133697509766,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				attN = top, 0
+				attN = bottom, 3
+				mass = 0.0500000007
+				shielded = False
+				temp = 293.32385868638977
+				tempExt = 293.40034310065045
+				tempExtUnexp = 293.40027057632517
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = ThreePounds/Flags/flag
+				rTrf = adapterSmallMiniTall
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = FMRS_PM
+					isEnabled = True
+					stagingEnabled = True
+					MM_DYNAMIC = true
+					parent_vessel = 00000000-0000-0000-0000-000000000000
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = solidBooster.sm
+				cid = 4293305658
+				uid = 3428982118
+				mid = 1150169452
+				launchID = 1
+				parent = 2
+				position = 0,-1.5620813369750977,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = -1
+				sidx = 0
+				attm = 0
+				srfN = srfAttach, -1
+				attN = bottom, -1
+				attN = top, 2
+				mass = 0.330000013
+				shielded = False
+				temp = 293.29323856567606
+				tempExt = 293.3238444117473
+				tempExtUnexp = 293.32379391478253
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = ThreePounds/Flags/flag
+				rTrf = solidBooster.sm
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleEngines
+					isEnabled = True
+					staged = False
+					flameout = False
+					EngineIgnited = False
+					engineShutdown = False
+					currentThrottle = 0
+					thrustPercentage = 36
+					manuallyOverridden = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSurfaceFX
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FMRS_PM
+					isEnabled = True
+					stagingEnabled = True
+					MM_DYNAMIC = true
+					parent_vessel = 00000000-0000-0000-0000-000000000000
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = SolidFuel
+					amount = 176
+					maxAmount = 176
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = basicFin
+				cid = 4293296950
+				uid = 3052989131
+				mid = 1150169452
+				launchID = 1
+				parent = 3
+				position = -5.2154064178466797E-08,-1.8559319972991943,-0.60361355543136597
+				rotation = -0.0308435317,-0.706433773,-0.0308434553,0.706433773
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sym = 5
+				sym = 6
+				srfN = srfAttach, 3
+				mass = 0.00999999978
+				shielded = False
+				temp = 293.33335016521158
+				tempExt = 293.37911421899167
+				tempExtUnexp = 293.37900140097935
+				expt = 0.100000001
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = ThreePounds/Flags/flag
+				rTrf = basicFin
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FMRS_PM
+					isEnabled = True
+					stagingEnabled = True
+					MM_DYNAMIC = true
+					parent_vessel = 00000000-0000-0000-0000-000000000000
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = basicFin
+				cid = 4293296730
+				uid = 82751179
+				mid = 1150169452
+				launchID = 1
+				parent = 3
+				position = -0.52274465560913086,-1.8559319972991943,0.30180689692497253
+				rotation = -0.0421329997,0.258572757,0.0112895612,0.965006471
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sym = 4
+				sym = 6
+				srfN = srfAttach, 3
+				mass = 0.00999999978
+				shielded = False
+				temp = 293.23362991626414
+				tempExt = 293.18004862928376
+				tempExtUnexp = 293.18003616859386
+				expt = 0.100000001
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = ThreePounds/Flags/flag
+				rTrf = basicFin
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FMRS_PM
+					isEnabled = True
+					stagingEnabled = True
+					MM_DYNAMIC = true
+					parent_vessel = 00000000-0000-0000-0000-000000000000
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = basicFin
+				cid = 4293296688
+				uid = 413934432
+				mid = 1150169452
+				launchID = 1
+				parent = 3
+				position = 0.52274477481842041,-1.8559319972991943,0.30180671811103821
+				rotation = -0.0112894475,0.96500653,0.0421330109,0.258572668
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sym = 4
+				sym = 5
+				srfN = srfAttach, 3
+				mass = 0.00999999978
+				shielded = False
+				temp = 293.37824112416581
+				tempExt = 293.46739968280536
+				tempExtUnexp = 293.4672334358566
+				expt = 0.100000001
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = ThreePounds/Flags/flag
+				rTrf = basicFin
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLiftingSurface
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FMRS_PM
+					isEnabled = True
+					stagingEnabled = True
+					MM_DYNAMIC = true
+					parent_vessel = 00000000-0000-0000-0000-000000000000
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = sensorBarometer
+				cid = 4294560104
+				uid = 656121560
+				mid = 1150169452
+				launchID = 1
+				parent = 0
+				position = 0,-0.013317346572875977,0.3438073992729187
+				rotation = 1.33073751E-21,1,-9.53384625E-15,1.39580337E-07
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, 0
+				mass = 0.00499999989
+				shielded = False
+				temp = 293.30041955460774
+				tempExt = 293.30271589671139
+				tempExtUnexp = 293.30268790755707
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = ThreePounds/Flags/flag
+				rTrf = sensorBarometer
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnviroSensor
+					isEnabled = True
+					sensorActive = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+						}
+						ResetAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FMRS_PM
+					isEnabled = True
+					stagingEnabled = True
+					MM_DYNAMIC = true
+					parent_vessel = 00000000-0000-0000-0000-000000000000
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = sensorThermometer
+				cid = 4294559482
+				uid = 3969063846
+				mid = 1150169452
+				launchID = 1
+				parent = 0
+				position = 2.9802322387695313E-08,0.00035548210144042969,-0.34336397051811218
+				rotation = 1.90678009E-14,2.19556952E-07,4.18646811E-21,-1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				srfN = srfAttach, 0
+				mass = 0.00499999989
+				shielded = False
+				temp = 293.30092714725339
+				tempExt = 293.30786851266328
+				tempExtUnexp = 293.30784454398162
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = ThreePounds/Flags/flag
+				rTrf = sensorThermometer
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnviroSensor
+					isEnabled = True
+					sensorActive = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+						}
+						ResetAction
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FMRS_PM
+					isEnabled = True
+					stagingEnabled = True
+					MM_DYNAMIC = true
+					parent_vessel = 00000000-0000-0000-0000-000000000000
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 1
+			}
+			VESSELMODULES
+			{
+				ModularFlightIntegrator
+				{
+				}
+				ModuleDynamicBatteryStorage
+				{
+				}
+				CommNetVessel
+				{
+					controlState = ProbeFull
+					canComm = True
+				}
+			}
+		}
 	}
 	LoaderInfo
 	{
