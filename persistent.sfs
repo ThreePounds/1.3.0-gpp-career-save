@@ -11,7 +11,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = ThreePounds/Flags/logo_mono_dark
-	launchID = 2
+	launchID = 5
 	modded = True
 	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe -popupwindow - 
 	versionFull = 1.3.0.1804 (WindowsPlayer x64)
@@ -119,8 +119,8 @@ GAME
 			DisplayOfferedWaypoints = True
 			DisplayActiveWaypoints = True
 			ActiveContractMultiplier = 1
-			lastMCButton = Active
-			lastMCButton = Active
+			lastMCButton = Available
+			lastMCButton = Available
 		}
 		ResearchBodies_SettingsParms
 		{
@@ -219,12 +219,12 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 92804.058076284971
+		update = 138058.99811937369
 		version = 1.3.0
 		WEIGHTS
 		{
 			ConfiguredContract = 30
-			SurveyContract = 42
+			SurveyContract = 78
 			StationContract = 30
 			SentinelContract = 30
 			SatelliteContract = 30
@@ -234,7 +234,7 @@ GAME
 			ARMContract = 30
 			RecoverAsset = 30
 			PlantFlag = 30
-			PartTest = 42
+			PartTest = 34
 			GrandTour = 30
 			Grannus = 30
 			Leto = 30
@@ -263,143 +263,11 @@ GAME
 			Augustus = 30
 			Eta = 30
 			Ceti = 30
-			Gael = 66
+			Gael = 85
 			Ciro = 30
 		}
 		CONTRACTS
 		{
-			CONTRACT
-			{
-				guid = 1e0899f2-d048-436d-acf7-344064be4ab1
-				type = SurveyContract
-				prestige = 0
-				seed = -806758392
-				state = Active
-				viewed = Read
-				agent = Sean's Cannery
-				deadlineType = Floating
-				expiryType = Floating
-				values = 41941.7495727539,44667963.2949829,7724.99978542328,14329.8739511967,7874.99964237213,0,1.904762,2,134024.047739277,92727.5180762694,44760690.8130592,0
-				targetBody = 1
-				centerLatitude = 7.2868206793752872
-				centerLongitude = -170.82231321779116
-				dataName = atmospheric
-				anomalyName = abnormalities
-				reportName = readings
-				locationName = Gael^N
-				focusedSurvey = True
-				targetBand = LOW
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Take pressure readings
-					experiment = barometerScan
-					flightThreshold = 18500
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -262450857
-					wpIndex = 0
-					wpTexture = pressure
-					wpLatitude = 7.2867990546360586
-					wpLongitude = -170.82228488886693
-					wpLandlocked = False
-					wpNavigationId = 493ee872-a572-45e1-928c-10630c52280a
-				}
-			}
-			CONTRACT
-			{
-				guid = e66e31af-aa20-4817-b88c-900796065f49
-				type = SurveyContract
-				prestige = 0
-				seed = -806758384
-				state = Offered
-				viewed = Read
-				agent = Integrated Integrals
-				deadlineType = Floating
-				expiryType = Floating
-				values = 64158.4160327911,45552475.3832817,7426.47052696523,13776.1022019055,7874.99964237213,0,1.942857,2,156240.714199314,0,0,0
-				targetBody = 1
-				centerLatitude = 9.8832188297354335
-				centerLongitude = -168.06283803379574
-				dataName = atmospheric
-				anomalyName = abnormalities
-				reportName = readings
-				locationName = Gael^N
-				focusedSurvey = True
-				targetBand = LOW
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Take pressure readings
-					experiment = barometerScan
-					flightThreshold = 18700
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -1865243879
-					wpIndex = 0
-					wpTexture = pressure
-					wpLatitude = 9.8832379729522017
-					wpLongitude = -168.0627976863519
-					wpLandlocked = False
-					wpNavigationId = be9750d3-7903-42b8-898a-2e2b34797c9c
-				}
-			}
-			CONTRACT
-			{
-				guid = 8fe1019c-8e6d-40d0-889f-3b2b4041ebb2
-				type = SurveyContract
-				prestige = 0
-				seed = -806758379
-				state = Offered
-				viewed = Read
-				agent = StrutCo
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,46008000,7500,13912.4993681908,7874.99964237213,0,1.904762,2,135282.298166523,0,0,0
-				targetBody = 1
-				centerLatitude = 7.5586581647500495
-				centerLongitude = -167.69445062709025
-				dataName = temperature
-				anomalyName = fluctuations
-				reportName = measurements
-				locationName = Gael^N
-				focusedSurvey = True
-				targetBand = LOW
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 1
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 17800
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -1241614690
-					wpIndex = 0
-					wpTexture = thermometer
-					wpLatitude = 7.5586584228584366
-					wpLongitude = -167.69446472322878
-					wpLandlocked = False
-					wpNavigationId = e1f5f9da-a7a5-41d0-872f-58806c1a57f8
-				}
-			}
 			CONTRACT
 			{
 				guid = c3fe87ce-cc20-48ac-990f-7a97740ce254
@@ -442,30 +310,6 @@ GAME
 					wpLongitude = -157.72540980732862
 					wpLandlocked = False
 					wpNavigationId = 53d59627-0f0c-4e1f-84e1-782d0797c2e5
-				}
-			}
-			CONTRACT
-			{
-				guid = 1caee63b-63f6-465d-91bb-681f6f665cf0
-				type = ExplorationContract
-				prestige = 0
-				seed = -1415369719
-				state = Active
-				viewed = Read
-				agent = Gaelean Historians Collective
-				deadlineType = None
-				expiryType = Floating
-				ignoresWeight = True
-				values = 21600,0,2240,4160,2240,1,2,0,21600.06,190.800000000024,0,0
-				targetBody = 1
-				bodyRatio = 0
-				PARAM
-				{
-					name = ProgressTrackingParameter
-					state = Incomplete
-					values = 6400,0,1,2,0
-					targetBody = 1
-					targetType = SCIENCE
 				}
 			}
 			CONTRACT
@@ -803,30 +647,30 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 7401d95c-554d-4481-8fda-c7009893d835
+				guid = 85786b8f-6b00-45fd-a884-780587c17acf
 				type = PartTest
 				prestige = 0
-				seed = -806758394
+				seed = 124764973
 				state = Offered
 				viewed = Seen
-				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
+				agent = Research & Development Department
 				deadlineType = Floating
 				expiryType = Floating
-				values = 20377.3568630219,8680754.02364731,4999.9999165535,13124.9991849065,5669.99974250793,2,4.275631,2.941176,112459.655029545,0,0,0
-				part = hybridBooster
+				values = 43200,9201600,5400,13500,5400,2,4,3,161265.33543916,0,0,0
+				part = SmallGearBay
 				haul = False
 				dest = 1
 				sit = SPLASHED
-				exp = True
+				exp = False
 				PARAM
 				{
 					name = PartTest
 					state = Incomplete
 					values = 0,0,0,0,0
-					part = hybridBooster
+					part = SmallGearBay
 					body = Gael
 					situation = SPLASHED
-					uniqueID = 0.95226815806341736
+					uniqueID = 0.27534606832794195
 					haul = False
 					repeatability = ONCEPERPART
 					PARAM
@@ -851,69 +695,20 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 3b6a9cd6-c8b6-4951-841b-b0d758cb5d1a
+				guid = 7940aa24-4d75-4be1-ba46-d4b3f161f2ce
 				type = PartTest
 				prestige = 1
-				seed = -806758365
-				state = Active
-				viewed = Read
-				agent = Research & Development Department
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,9201600,8438,21094,8438,2,5,4,135282.298166523,92691.118076262,9294291.11807626,0
-				part = SmallGearBay
-				haul = True
-				dest = 1
-				sit = FLYING
-				exp = False
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					part = SmallGearBay
-					body = Gael
-					situation = FLYING
-					uniqueID = 0.12538527051237658
-					haul = True
-					repeatability = ONCEPERPART
-				}
-				PARAM
-				{
-					name = ReachDestination
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					dest = 1
-					title = 
-				}
-				PARAM
-				{
-					name = ReachSituation
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					sit = FLYING
-					title = 
-				}
-			}
-			CONTRACT
-			{
-				guid = f9e7dc47-413e-4b2b-8645-f8a93ef513b5
-				type = PartTest
-				prestige = 1
-				seed = -1891993034
+				seed = 124764974
 				state = Offered
-				viewed = Read
+				viewed = Seen
 				agent = Kerbal Motion LLC
 				deadlineType = Floating
 				expiryType = Floating
-				values = 21600,9201600,16875,42188,16875,5,11,9,113786.118166544,0,0,0
+				values = 43200,9201600,24750,61875,24750,9,16,12,161265.33543916,0,0,0
 				part = roverWheel1
-				haul = True
+				haul = False
 				dest = 1
-				sit = ORBITING
+				sit = ESCAPING
 				exp = True
 				PARAM
 				{
@@ -922,58 +717,58 @@ GAME
 					values = 0,0,0,0,0
 					part = roverWheel1
 					body = Gael
-					situation = ORBITING
-					uniqueID = 0.27422556107594892
-					haul = True
+					situation = ESCAPING
+					uniqueID = 0.70920113414023123
+					haul = False
 					repeatability = ONCEPERPART
-				}
-				PARAM
-				{
-					name = ReachDestination
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					dest = 1
-					title = 
-				}
-				PARAM
-				{
-					name = ReachSituation
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					sit = ORBITING
-					title = 
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = ESCAPING
+						title = 
+					}
 				}
 			}
 			CONTRACT
 			{
-				guid = 22092a26-d59c-4b5d-b541-82a7fb9404e9
+				guid = f9488709-bdbc-4348-9c5d-d1e51016a775
 				type = PartTest
 				prestige = 1
-				seed = -806758349
+				seed = -1842565327
 				state = Offered
-				viewed = Seen
-				agent = Research & Development Department
+				viewed = Unseen
+				agent = FLOOYD Dynamics Research Labs
 				deadlineType = Floating
 				expiryType = Floating
-				values = 43200,9201600,11250,28125,11250,4,8,5,135282.298166523,0,0,0
-				part = solidBooster.sm
+				values = 21600,9201600,11250,30937.5006705523,12375.0002682209,4,7.272727,5,157468.522068655,0,0,0
+				part = fairingSize1
 				haul = False
 				dest = 1
 				sit = FLYING
-				exp = False
+				exp = True
 				PARAM
 				{
 					name = PartTest
 					state = Incomplete
 					values = 0,0,0,0,0
-					part = solidBooster.sm
+					part = fairingSize1
 					body = Gael
 					situation = FLYING
-					uniqueID = 0.90485782311524166
+					uniqueID = 0.58326284242014537
 					haul = False
-					repeatability = ONCEPERPART
+					repeatability = BODYANDSITUATION
 					PARAM
 					{
 						name = ReachDestination
@@ -998,8 +793,8 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						minAlt = 25000
-						maxAlt = 28000
+						minAlt = 36000
+						maxAlt = 40000
 					}
 					PARAM
 					{
@@ -1007,26 +802,26 @@ GAME
 						state = Incomplete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
-						minSpd = 500
-						maxSpd = 570
+						minSpd = 410
+						maxSpd = 1450
 					}
 				}
 			}
 			CONTRACT
 			{
-				guid = 9d9e8a7f-1788-4a4a-a47e-9b2729308aec
+				guid = eebe9b50-0df9-4456-8079-7bc6f1afda75
 				type = ExplorationContract
 				prestige = 2
-				seed = -1415369705
+				seed = -1636862658
 				state = Offered
-				viewed = Seen
+				viewed = Unseen
 				agent = Gaelean Historians Collective
 				deadlineType = None
 				expiryType = Floating
 				ignoresWeight = True
-				values = 129600,0,16800,31200,16800,6,10,0,129600.06,0,0,0
+				values = 129600,0,16800,31200,16800,6,10,0,265908.933330099,0,0,0
 				targetBody = 1
-				bodyRatio = 0
+				bodyRatio = 0.214285716
 				PARAM
 				{
 					name = ProgressTrackingParameter
@@ -1034,6 +829,400 @@ GAME
 					values = 48000,0,6,10,0
 					targetBody = 1
 					targetType = ORBIT
+				}
+			}
+			CONTRACT
+			{
+				guid = 1aade0cd-b887-405b-9fd3-e265fb4016d4
+				type = PartTest
+				prestige = 1
+				seed = -1636862653
+				state = Offered
+				viewed = Unseen
+				agent = C7 Aerospace Division
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,9201600,18000,45000,18000,6,12,9,179508.933330099,0,0,0
+				part = smallHardpoint
+				haul = False
+				dest = 1
+				sit = SUB_ORBITAL
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = smallHardpoint
+					body = Gael
+					situation = SUB_ORBITAL
+					uniqueID = 0.85701378009142992
+					haul = False
+					repeatability = BODYANDSITUATION
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = SUB_ORBITAL
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 220000
+						maxAlt = 230000
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 1ad98969-9394-4dc4-b57f-34e3881190b5
+				type = PartTest
+				prestige = 1
+				seed = -1635447663
+				state = Offered
+				viewed = Unseen
+				agent = O.M.B. Demolition Enterprises
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,9201600,13500,37125.0008046627,14850.0003218651,5,8.181818,6,157920.56991152,0,0,0
+				part = radialDecoupler
+				haul = True
+				dest = 1
+				sit = SUB_ORBITAL
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = radialDecoupler
+					body = Gael
+					situation = SUB_ORBITAL
+					uniqueID = 0.97371425059331318
+					haul = True
+					repeatability = BODYANDSITUATION
+				}
+				PARAM
+				{
+					name = ReachDestination
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					dest = 1
+					title = 
+				}
+				PARAM
+				{
+					name = ReachSituation
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					sit = SUB_ORBITAL
+					title = 
+				}
+				PARAM
+				{
+					name = ReachAltitudeEnvelope
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					minAlt = 190000
+					maxAlt = 200000
+				}
+			}
+			CONTRACT
+			{
+				guid = b85dc3ee-a044-4ed0-b729-70fb3747a2a7
+				type = PartTest
+				prestige = 0
+				seed = -104439527
+				state = Offered
+				viewed = Unseen
+				agent = O.M.B. Demolition Enterprises
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,9201600,5400,14174.9993562698,5669.99974250793,2,3.809524,3,179995.132619176,0,0,0
+				part = stackSeparatorMini
+				haul = False
+				dest = 1
+				sit = SPLASHED
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = stackSeparatorMini
+					body = Gael
+					situation = SPLASHED
+					uniqueID = 0.7416236669484636
+					haul = False
+					repeatability = ALWAYS
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = SPLASHED
+						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 3e6b87ba-ad8a-4616-9612-bd6061b49a1d
+				type = PartTest
+				prestige = 0
+				seed = -2049360459
+				state = Offered
+				viewed = Unseen
+				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
+				deadlineType = Floating
+				expiryType = Floating
+				values = 20377.3568630219,8680754.02364731,1666.66663885117,4374.99972830216,1889.99991416931,1,1.068908,0.9803922,157179.349482194,0,0,0
+				part = microEngine
+				haul = False
+				dest = 1
+				sit = LANDED
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = microEngine
+					body = Gael
+					situation = LANDED
+					uniqueID = 0.9209962780219485
+					haul = False
+					repeatability = ALWAYS
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = LANDED
+						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = bed36541-be1a-4a7d-bc98-c500cc3c03d4
+				type = SurveyContract
+				prestige = 0
+				seed = -1278710080
+				state = Offered
+				viewed = Unseen
+				agent = SCAN: Scientific Committee on Advanced Navigation
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,46008000,7500,13250,7500,0,2,2,180261.366454578,0,0,0
+				targetBody = 1
+				centerLatitude = 10.475867390949453
+				centerLongitude = -162.70047511277676
+				dataName = observational
+				anomalyName = inconsistencies
+				reportName = reports
+				locationName = Gael^N
+				focusedSurvey = True
+				targetBand = HIGH
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Take a crew report
+					experiment = crewReport
+					flightThreshold = 19300
+					band = 3
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = -1652596590
+					wpIndex = 0
+					wpTexture = report
+					wpLatitude = 10.475874378485369
+					wpLongitude = -162.70040263724837
+					wpLandlocked = False
+					wpNavigationId = bb17ffea-b2d6-4a6c-b4d6-1862a051e337
+				}
+			}
+			CONTRACT
+			{
+				guid = 239ee685-0342-4fbb-a7e0-e8b09d5503c4
+				type = PartTest
+				prestige = 0
+				seed = -715479889
+				state = Offered
+				viewed = Unseen
+				agent = Research & Development Department
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,9201600,9000,22500,9000,3,6,4,180934.552787461,0,0,0
+				part = solidBooster.sm
+				haul = False
+				dest = 1
+				sit = FLYING
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = solidBooster.sm
+					body = Gael
+					situation = FLYING
+					uniqueID = 0.7932239802522697
+					haul = False
+					repeatability = ALWAYS
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = FLYING
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 61000
+						maxAlt = 67000
+					}
+					PARAM
+					{
+						name = ReachSpeedEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minSpd = 230
+						maxSpd = 410
+					}
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 1caee63b-63f6-465d-91bb-681f6f665cf0
+				type = ExplorationContract
+				prestige = 0
+				seed = -1415369719
+				state = Completed
+				viewed = Read
+				agent = Gaelean Historians Collective
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 21600,0,2240,4160,2240,1,2,0,21600.06,190.800000000024,0,0
+				targetBody = 1
+				bodyRatio = 0
+				PARAM
+				{
+					name = ProgressTrackingParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					targetBody = 1
+					targetType = SCIENCE
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 3b6a9cd6-c8b6-4951-841b-b0d758cb5d1a
+				type = PartTest
+				prestige = 1
+				seed = -806758365
+				state = Completed
+				viewed = Read
+				agent = Research & Development Department
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,9201600,8438,21094,8438,2,5,4,135282.298166523,92691.118076262,9294291.11807626,0
+				part = SmallGearBay
+				haul = True
+				dest = 1
+				sit = FLYING
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					part = SmallGearBay
+					body = Gael
+					situation = FLYING
+					uniqueID = 0.12538527051237658
+					haul = True
+					repeatability = ONCEPERPART
+				}
+				PARAM
+				{
+					name = ReachDestination
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					dest = 1
+					title = 
+				}
+				PARAM
+				{
+					name = ReachSituation
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					sit = FLYING
+					title = 
 				}
 			}
 			CONTRACT_FINISHED
@@ -1061,6 +1250,186 @@ GAME
 					targetType = FIRSTLAUNCH
 				}
 			}
+			CONTRACT_FINISHED
+			{
+				guid = 1e0899f2-d048-436d-acf7-344064be4ab1
+				type = SurveyContract
+				prestige = 0
+				seed = -806758392
+				state = Completed
+				viewed = Read
+				agent = Sean's Cannery
+				deadlineType = Floating
+				expiryType = Floating
+				values = 41941.7495727539,44667963.2949829,7724.99978542328,14329.8739511967,7874.99964237213,0,1.904762,2,134024.047739277,92727.5180762694,44760690.8130592,0
+				targetBody = 1
+				centerLatitude = 7.2868206793752872
+				centerLongitude = -170.82231321779116
+				dataName = atmospheric
+				anomalyName = abnormalities
+				reportName = readings
+				locationName = Gael^N
+				focusedSurvey = True
+				targetBand = LOW
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Take pressure readings
+					experiment = barometerScan
+					flightThreshold = 18500
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = -262450857
+					wpIndex = 0
+					wpTexture = pressure
+					wpLatitude = 7.2867990546360586
+					wpLongitude = -170.82228488886693
+					wpLandlocked = False
+					wpNavigationId = 493ee872-a572-45e1-928c-10630c52280a
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = e66e31af-aa20-4817-b88c-900796065f49
+				type = SurveyContract
+				prestige = 0
+				seed = -806758384
+				state = Completed
+				viewed = Read
+				agent = Integrated Integrals
+				deadlineType = Floating
+				expiryType = Floating
+				values = 64158.4160327911,45552475.3832817,7426.47052696523,13776.1022019055,7874.99964237213,0,1.942857,2,156240.714199314,119398.464394079,45671873.8476758,0
+				targetBody = 1
+				centerLatitude = 9.8832188297354335
+				centerLongitude = -168.06283803379574
+				dataName = atmospheric
+				anomalyName = abnormalities
+				reportName = readings
+				locationName = Gael^N
+				focusedSurvey = True
+				targetBand = LOW
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Take pressure readings
+					experiment = barometerScan
+					flightThreshold = 18700
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = -1865243879
+					wpIndex = 0
+					wpTexture = pressure
+					wpLatitude = 9.8832379729522017
+					wpLongitude = -168.0627976863519
+					wpLandlocked = False
+					wpNavigationId = be9750d3-7903-42b8-898a-2e2b34797c9c
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 8a040530-77af-4654-a894-fec3142ee6b8
+				type = SurveyContract
+				prestige = 0
+				seed = 579277470
+				state = Completed
+				viewed = Read
+				agent = Integrated Integrals
+				deadlineType = Floating
+				expiryType = Floating
+				values = 106930.693387985,45552475.3832817,7426.47052696523,13776.1022019055,7874.99964237213,0,1.942857,2,225642.755771489,119398.464394079,45671873.8476758,0
+				targetBody = 1
+				centerLatitude = 10.7512117273135
+				centerLongitude = -169.15295027940871
+				dataName = temperature
+				anomalyName = fluctuations
+				reportName = measurements
+				locationName = Gael^N
+				focusedSurvey = True
+				targetBand = LOW
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Measure the temperature
+					experiment = temperatureScan
+					flightThreshold = 17100
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = -462118209
+					wpIndex = 0
+					wpTexture = thermometer
+					wpLatitude = 10.751204355752296
+					wpLongitude = -169.15300312452402
+					wpLandlocked = False
+					wpNavigationId = 084ea677-48c9-4f6e-b84c-7e231d0e8938
+				}
+			}
+			CONTRACT_FINISHED
+			{
+				guid = 8fe1019c-8e6d-40d0-889f-3b2b4041ebb2
+				type = SurveyContract
+				prestige = 0
+				seed = -806758379
+				state = Completed
+				viewed = Read
+				agent = StrutCo
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,46008000,7500,13912.4993681908,7874.99964237213,0,1.904762,2,135282.298166523,119398.464394079,46127398.4643941,0
+				targetBody = 1
+				centerLatitude = 7.5586581647500495
+				centerLongitude = -167.69445062709025
+				dataName = temperature
+				anomalyName = fluctuations
+				reportName = measurements
+				locationName = Gael^N
+				focusedSurvey = True
+				targetBand = LOW
+				contextual = False
+				PARAM
+				{
+					name = SurveyWaypointParameter
+					enabled = False
+					state = Complete
+					values = 0,0,0,0,0
+					targetBody = 1
+					actionDescription = Measure the temperature
+					experiment = temperatureScan
+					flightThreshold = 17800
+					band = 2
+					clusterState = MIXED
+					verified = True
+					contextual = False
+					wpSeed = -1241614690
+					wpIndex = 0
+					wpTexture = thermometer
+					wpLatitude = 7.5586584228584366
+					wpLongitude = -167.69446472322878
+					wpLandlocked = False
+					wpNavigationId = e1f5f9da-a7a5-41d0-872f-58806c1a57f8
+				}
+			}
 		}
 	}
 	SCENARIO
@@ -1073,7 +1442,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 183441.25362454948
+		funds = 299581.72172342526
 	}
 	SCENARIO
 	{
@@ -1083,7 +1452,7 @@ GAME
 		{
 			FirstLaunch
 			{
-				completedUnmanned = 92082.298166522742
+				completed = 92082.298166522742
 			}
 			FirstCrewToSurvive
 			{
@@ -1105,8 +1474,8 @@ GAME
 			}
 			RecordsDistance
 			{
-				reached = 92431.83791264506
-				record = 15190.411466950522
+				reached = 118749.10238351127
+				record = 24617.15703670527
 			}
 			ReachedSpace
 			{
@@ -1122,11 +1491,32 @@ GAME
 				reached = 92492.938076221588
 				Landing
 				{
-					completedUnmanned = 92492.938076221588
+					completed = 92492.938076221588
 					vessel
 					{
 						name = Ambassador Mk1 Debris
 						flag = ThreePounds/Flags/flag
+					}
+				}
+				Science
+				{
+					completedManned = 92981.93807632121
+					vessel
+					{
+						name = Count Bill
+						flag = ThreePounds/Flags/logo_mono_dark
+					}
+					crew
+					{
+						crews = Phoebe Gaelan
+					}
+				}
+				SurfaceEVA
+				{
+					completed = 92832.538076290773
+					crew
+					{
+						crews = Phoebe Gaelan
 					}
 				}
 			}
@@ -1136,7 +1526,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 11
+		sci = 50.8722191
 		Tech
 		{
 			id = start
@@ -1208,6 +1598,58 @@ GAME
 			part = wingShuttleElevon1
 			part = wingShuttleDelta
 		}
+		Tech
+		{
+			id = basicRocketry
+			state = Available
+			cost = 12
+			part = fuelTank.long
+			part = fuelTank
+			part = fuelTankSmall
+			part = fuelTankSmallFlat
+			part = solidBooster
+			part = liquidEngine
+			part = sasModule
+			part = R8winglet
+			part = hybridBooster
+		}
+		Tech
+		{
+			id = engineering101
+			state = Available
+			cost = 3
+			part = roverWheel2
+			part = roverWheel1
+			part = spotLight2
+			part = spotLight1
+			part = telescopicLadderBay
+			part = HighGainAntenna5
+			part = sensorAccelerometer
+			part = FuelCell
+			part = ksp.r.largeBatteryPack
+			part = batteryPack
+			part = roverBody
+			part = seatExternalCmd
+		}
+		Tech
+		{
+			id = structuralParts
+			state = Available
+			cost = 1
+			part = ladder1
+			part = trussPiece3x
+			part = trussPiece1x
+			part = trussAdapter
+			part = strutOcto
+			part = strutCube
+			part = structuralPanel2
+			part = structuralPanel1
+			part = structuralMiniNode
+			part = structuralIBeam1
+			part = structuralIBeam3
+			part = structuralIBeam2
+			part = adapterSmallMiniShort
+		}
 		Science
 		{
 			id = temperatureScan@GaelSrfLandedLaunchPad
@@ -1217,6 +1659,186 @@ GAME
 			sbv = 0.300000012
 			sci = 0
 			cap = 0.900000036
+		}
+		Science
+		{
+			id = barometerScan@GaelSrfLandedRunway
+			title = Atmospheric Pressure Scan from Runway
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 0.900000036
+			cap = 0.900000036
+		}
+		Science
+		{
+			id = temperatureScan@GaelSrfLandedRunway
+			title = Temperature Scan from Runway
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 0.900000036
+			cap = 0.900000036
+		}
+		Science
+		{
+			id = crewReport@GaelSrfLandedRunway
+			title = Crew Report from Runway
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 1.80000007
+			cap = 1.80000007
+		}
+		Science
+		{
+			id = crewReport@GaelFlyingLowWater
+			title = Crew Report while flying over
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 4.19999981
+			cap = 4.19999981
+		}
+		Science
+		{
+			id = temperatureScan@GaelFlyingLowWater
+			title = Temperature Scan while flying over
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 2.0999999
+			cap = 2.0999999
+		}
+		Science
+		{
+			id = barometerScan@GaelFlyingLow
+			title = Atmospheric Pressure Scan while flying at Gael
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 2.0999999
+			cap = 2.0999999
+		}
+		Science
+		{
+			id = crewReport@GaelFlyingLowVolcano
+			title = Crew Report while flying over
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 4.19999981
+			cap = 4.19999981
+		}
+		Science
+		{
+			id = temperatureScan@GaelFlyingLowVolcano
+			title = Temperature Scan while flying over
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 2.0999999
+			cap = 2.0999999
+		}
+		Science
+		{
+			id = evaReport@GaelSrfLandedRunway
+			title = EVA Report from Runway
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = recovery@GaelFlew
+			title = Recovery of a vessel returned from a flight over Gael
+			dsc = 1
+			scv = 0.00462961197
+			sbv = 5
+			sci = 5.97222233
+			cap = 6
+		}
+		Science
+		{
+			id = crewReport@GaelFlyingLowLowlands
+			title = Crew Report while flying over
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 4.19999981
+			cap = 4.19999981
+		}
+		Science
+		{
+			id = temperatureScan@GaelFlyingLowLowlands
+			title = Temperature Scan while flying over
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 2.0999999
+			cap = 2.0999999
+		}
+		Science
+		{
+			id = temperatureScan@GaelFlyingLowMountains
+			title = Temperature Scan while flying over
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 2.0999999
+			cap = 2.0999999
+		}
+		Science
+		{
+			id = crewReport@GaelFlyingLowMountains
+			title = Crew Report while flying over
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 4.19999981
+			cap = 4.19999981
+		}
+		Science
+		{
+			id = crewReport@GaelFlyingLowHighlands
+			title = Crew Report while flying over
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 4.19999981
+			cap = 4.19999981
+		}
+		Science
+		{
+			id = temperatureScan@GaelFlyingLowHighlands
+			title = Temperature Scan while flying over
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 2.0999999
+			cap = 2.0999999
+		}
+		Science
+		{
+			id = temperatureScan@GaelFlyingLowPligiaShores
+			title = Temperature Scan while flying over
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 2.0999999
+			cap = 2.0999999
+		}
+		Science
+		{
+			id = crewReport@GaelFlyingLowPligiaShores
+			title = Crew Report while flying over
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 4.19999981
+			cap = 4.19999981
 		}
 	}
 	SCENARIO
@@ -1228,7 +1850,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 31.4996166
+		rep = 57.6813507
 	}
 	SCENARIO
 	{
@@ -1506,7 +2128,7 @@ GAME
 	{
 		name = SentinelScenario
 		scene = 7, 8, 5
-		NextSpawnTime = 93800.788060157298
+		NextSpawnTime = 140308.04950642359
 	}
 	SCENARIO
 	{
@@ -1706,6 +2328,1323 @@ GAME
 				}
 			}
 		}
+		CONTRACT
+		{
+			guid = 7aed713c-18f8-4ce5-a73c-a1656f8032e7
+			type = ConfiguredContract
+			prestige = 0
+			seed = 849198330
+			state = Offered
+			viewed = Unseen
+			agent = Field Research Team
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 289020,0,0,22312,0,0,5,0,427012.758119408,0,0,0
+			subtype = FS_Experiment
+			title = Perform Atmospheric pressure scan experiments on Gael
+			description = Wernher is especially excited to try some atmospheric pressure scan experiments at various locations on Gael.  We doubt the results will be much different from the last study Wernher commissioned...  but he's the boss!
+			synopsis = Run the atmospheric pressure scan experiments on Gael.
+			completedMessage = Yup, that's definitely a lot of atmospheric pressure scan results.  Just put the data in a spreadsheet and we'll look at it later.
+			hash = 1723975082
+			targetBody = Gael
+			UNIQUE_DATA
+			{
+				experiment = ScienceExperiment:barometerScan
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 10300,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_Experiment
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Gael
+				biome = IceCaps
+				situation = SrfLanded
+				experiment = barometerScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Gael's Ice Caps
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Biome: Gael's Ice Caps
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Atmospheric Pressure Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Experiment: Atmospheric Pressure Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = barometerScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 11479,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_Experiment
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Gael
+				biome = Midlands
+				situation = SrfLanded
+				experiment = barometerScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Gael's Midlands
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Biome: Gael's Midlands
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Atmospheric Pressure Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Experiment: Atmospheric Pressure Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = barometerScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 10689,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_Experiment
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Gael
+				situation = FlyingHigh
+				experiment = barometerScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Destination: Gael
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Destination: Gael
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Flying high
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Situation: Flying high
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Atmospheric Pressure Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Experiment: Atmospheric Pressure Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = barometerScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = 29d94d95-1425-4967-b608-68457390fc93
+			type = ConfiguredContract
+			prestige = 0
+			seed = 711493714
+			state = Offered
+			viewed = Unseen
+			agent = Field Research Team
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 1206420,0,0,25745,0,0,4,0,1344412.91811941,0,0,0
+			subtype = FS_GeologicalStudy
+			title = Geological study of Gael
+			description = Geologically speaking, we know very little about Gael.  That's why we've applied for a research grant to do a geological study of Gael.  We haven't actually received the grant, but I'm sure things will work out fine.
+			synopsis = Perform a study of Gael's geology.
+			completedMessage = Great work, I hope Linus remembered to submit the grant paperwork!
+			hash = 982147295
+			targetBody = Gael
+			UNIQUE_DATA
+			{
+				targetBody1 = CelestialBody:Gael
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 15992,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_GeologicalStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Gael
+				biome = Tundra
+				situation = SrfLanded
+				experiment = seismicScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Gael's Tundra
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Biome: Gael's Tundra
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Seismic Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Experiment: Seismic Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = seismicScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 15378,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_GeologicalStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Gael
+				biome = MinorShores
+				situation = SrfLanded
+				experiment = seismicScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Gael's Minor Shores
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Biome: Gael's Minor Shores
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Seismic Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Experiment: Seismic Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = seismicScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 15748,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_GeologicalStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Gael
+				biome = Highlands
+				situation = SrfLanded
+				experiment = seismicScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Gael's Highlands
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Biome: Gael's Highlands
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Seismic Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Experiment: Seismic Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = seismicScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 15980,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_GeologicalStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Gael
+				biome = Lowlands
+				situation = SrfLanded
+				experiment = seismicScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Gael's Lowlands
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Biome: Gael's Lowlands
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Seismic Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Experiment: Seismic Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = seismicScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 15967,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_GeologicalStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Gael
+				biome = Reefs
+				situation = SrfLanded
+				experiment = seismicScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Gael's Reefs
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Biome: Gael's Reefs
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Seismic Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_GeologicalStudy
+					title = Experiment: Seismic Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = seismicScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_GeologicalStudy
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = b2a18310-e3d8-403d-adb4-ff90cf717993
+			type = ConfiguredContract
+			prestige = 0
+			seed = 323089461
+			state = Offered
+			viewed = Unseen
+			agent = Field Research Team
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 1503000,0,0,20090,0,0,2,0,1640993.59811941,0,0,0
+			subtype = FS_Experiment
+			title = Perform Telemetry report experiments on Gael
+			description = Wernher is especially excited to try some telemetry report experiments at various locations on Gael.  We doubt the results will be much different from the last study Wernher commissioned...  but he's the boss!
+			synopsis = Run the telemetry report experiments on Gael.
+			completedMessage = Yup, that's definitely a lot of telemetry report results.  Just put the data in a spreadsheet and we'll look at it later.
+			hash = 1723975082
+			targetBody = Gael
+			UNIQUE_DATA
+			{
+				experiment = ScienceExperiment:telemetryReport
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 12310,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_Experiment
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Gael
+				biome = GoonieIsland
+				situation = SrfLanded
+				experiment = telemetryReport
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Gael's Goonie Island
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Biome: Gael's Goonie Island
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Telemetry Report
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Experiment: Telemetry Report
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = telemetryReportSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 10198,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_Experiment
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Gael
+				biome = GoonieShores
+				situation = SrfLanded
+				experiment = telemetryReport
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Gael's Goonie Shores
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Biome: Gael's Goonie Shores
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Telemetry Report
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Experiment: Telemetry Report
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = telemetryReportSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				disableOnStateChange = False
+				values = 12889,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_Experiment
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Gael
+				biome = Mountains
+				situation = SrfLanded
+				experiment = telemetryReport
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Gael's Mountains
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Biome: Gael's Mountains
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Telemetry Report
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = FieldResearch.FS_Experiment
+					title = Experiment: Telemetry Report
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = telemetryReportSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = FieldResearch.FS_Experiment
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+		}
+		CONTRACT
+		{
+			guid = 8e07d654-a6e2-4c5d-ac75-7854401d5f1f
+			type = ConfiguredContract
+			prestige = 0
+			seed = 27167775
+			state = Offered
+			viewed = Unseen
+			agent = Field Research Team
+			deadlineType = None
+			expiryType = Floating
+			ignoresWeight = True
+			values = 2153400,0,0,28842,0,0,4,0,2291460.79811937,0,0,0
+			subtype = FS_ClimateStudy
+			title = Climate study of Gael
+			description = Due to the number of Kerbals that believe the crazy notion that rocketry has an adverse effect on Gael's climate, we've been asked by the government to perform a climate study.  Let's prove once and for all that rocketry is completely safe (ecologically speaking, that is).
+			synopsis = Perform a study of Gael's climate.
+			completedMessage = Great work, I'm sure we'll be able to make this data fit our narrative!
+			hash = 1714682782
+			targetBody = Gael
+			UNIQUE_DATA
+			{
+				targetBody1 = CelestialBody:Gael
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				values = 15552,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_ClimateStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Gael
+				biome = Water
+				situation = SrfSplashed
+				experiment = barometerScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Gael's Water
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Biome: Gael's Water
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Splashed down
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Situation: Splashed down
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Atmospheric Pressure Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Experiment: Atmospheric Pressure Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = barometerScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				values = 15213,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_ClimateStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Gael
+				biome = InlandWater
+				situation = SrfSplashed
+				experiment = temperatureScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Gael's Inland Water
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Biome: Gael's Inland Water
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Splashed down
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Situation: Splashed down
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Temperature Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Experiment: Temperature Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = temperatureScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				values = 15011,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_ClimateStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Gael
+				biome = Water
+				situation = SrfSplashed
+				experiment = temperatureScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Gael's Water
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Biome: Gael's Water
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Splashed down
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Situation: Splashed down
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Temperature Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Experiment: Temperature Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = temperatureScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				values = 15017,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_ClimateStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Gael
+				biome = Tundra
+				situation = FlyingLow
+				experiment = temperatureScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Gael's Tundra
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Biome: Gael's Tundra
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Flying low
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Situation: Flying low
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Temperature Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Experiment: Temperature Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = temperatureScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+			PARAM
+			{
+				name = CollectScienceCustom
+				id = CollectScience
+				state = Incomplete
+				values = 15369,0,0,0,0
+				ContractIdentifier = FieldResearch.FS_ClimateStudy
+				title = 
+				notes = 
+				completedMessage = 
+				allowStateReset = False
+				targetBody = Gael
+				biome = GoonieShores
+				situation = SrfLanded
+				experiment = temperatureScan
+				recoveryMethod = Ideal
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Biome: Gael's Goonie Shores
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Biome: Gael's Goonie Shores
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Situation: Landed
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Situation: Landed
+					notes = 
+					completedMessage = 
+				}
+				PARAM
+				{
+					name = ParameterDelegate`1
+					id = Experiment: Temperature Scan
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					title = Experiment: Temperature Scan
+					notes = 
+					completedMessage = 
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = temperatureScanSubject
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = 
+						notes = 
+						completedMessage = 
+					}
+					PARAM
+					{
+						name = ParameterDelegate`1
+						id = Recovery: Recover or transmit
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						title = Recovery: Recover or transmit
+						notes = 
+						completedMessage = 
+					}
+				}
+			}
+		}
 	}
 	SCENARIO
 	{
@@ -1741,6 +3680,342 @@ GAME
 	{
 		name = HallOfFameScenarioModule
 		scene = 7, 8, 5
+		ENTRY
+		{
+			time = 92832.5380762908
+			name = Phoebe Gaelan
+			code = EX+
+			data = 
+		}
+		ENTRY
+		{
+			time = 92834.2580762911
+			name = Phoebe Gaelan
+			code = L+
+			data = 
+		}
+		ENTRY
+		{
+			time = 92834.2980762911
+			name = Phoebe Gaelan
+			code = G1:Gael
+			data = 
+		}
+		ENTRY
+		{
+			time = 92883.3180763011
+			name = Phoebe Gaelan
+			code = B+
+			data = 
+		}
+		ENTRY
+		{
+			time = 92904.4180763054
+			name = Phoebe Gaelan
+			code = L+
+			data = 
+		}
+		ENTRY
+		{
+			time = 92926.2580763099
+			name = Phoebe Gaelan
+			code = C+
+			data = 
+		}
+		ENTRY
+		{
+			time = 92926.2580763099
+			name = Phoebe Gaelan
+			code = CP1
+			data = 
+		}
+		ENTRY
+		{
+			time = 92981.9380763212
+			name = Phoebe Gaelan
+			code = C+
+			data = 
+		}
+		ENTRY
+		{
+			time = 92981.9380763212
+			name = Phoebe Gaelan
+			code = S+
+			data = 0.900000035762787
+		}
+		ENTRY
+		{
+			time = 93031.1180763312
+			name = Phoebe Gaelan
+			code = S+
+			data = 1.80000007152557
+		}
+		ENTRY
+		{
+			time = 93033.5580763317
+			name = Phoebe Gaelan
+			code = S+
+			data = 0.900000035762787
+		}
+		ENTRY
+		{
+			time = 93114.9180763483
+			name = Phoebe Gaelan
+			code = S+
+			data = 4.19999980926514
+		}
+		ENTRY
+		{
+			time = 93122.4580763498
+			name = Phoebe Gaelan
+			code = S+
+			data = 2.09999990463257
+		}
+		ENTRY
+		{
+			time = 93129.9580763514
+			name = Phoebe Gaelan
+			code = S+
+			data = 2.09999990463257
+		}
+		ENTRY
+		{
+			time = 93129.9580763514
+			name = Phoebe Gaelan
+			code = YR10
+			data = 
+		}
+		ENTRY
+		{
+			time = 93336.2380763934
+			name = Phoebe Gaelan
+			code = S+
+			data = 4.19999980926514
+		}
+		ENTRY
+		{
+			time = 93345.2780763952
+			name = Phoebe Gaelan
+			code = S+
+			data = 2.09999990463257
+		}
+		ENTRY
+		{
+			time = 93555.018076438
+			name = Phoebe Gaelan
+			code = L1:Gael
+			data = 
+		}
+		ENTRY
+		{
+			time = 93594.298076446
+			name = Phoebe Gaelan
+			code = EX+
+			data = 
+		}
+		ENTRY
+		{
+			time = 93599.9980764471
+			name = Phoebe Gaelan
+			code = B+
+			data = 
+		}
+		ENTRY
+		{
+			time = 93601.9380764475
+			name = Phoebe Gaelan
+			code = S+
+			data = 2.40000009536743
+		}
+		ENTRY
+		{
+			time = 93601.9380764475
+			name = Phoebe Gaelan
+			code = S+
+			data = 5
+		}
+		ENTRY
+		{
+			time = 93601.9380764475
+			name = Phoebe Gaelan
+			code = M+
+			data = 
+		}
+		ENTRY
+		{
+			time = 93601.9380764475
+			name = Phoebe Gaelan
+			code = QO
+			data = 
+		}
+		ENTRY
+		{
+			time = 118146.099638086
+			name = Phoebe Gaelan
+			code = L+
+			data = 
+		}
+		ENTRY
+		{
+			time = 118184.119638094
+			name = Phoebe Gaelan
+			code = S+
+			data = 4.19999980926514
+		}
+		ENTRY
+		{
+			time = 118193.959638096
+			name = Phoebe Gaelan
+			code = S+
+			data = 2.09999990463257
+		}
+		ENTRY
+		{
+			time = 118541.620940623
+			name = Phoebe Gaelan
+			code = RD
+			data = 
+		}
+		ENTRY
+		{
+			time = 118712.062383504
+			name = Phoebe Gaelan
+			code = C+
+			data = 
+		}
+		ENTRY
+		{
+			time = 118723.042383506
+			name = Phoebe Gaelan
+			code = S+
+			data = 2.09999990463257
+		}
+		ENTRY
+		{
+			time = 118733.962383508
+			name = Phoebe Gaelan
+			code = S+
+			data = 4.19999980926514
+		}
+		ENTRY
+		{
+			time = 119266.464394052
+			name = Phoebe Gaelan
+			code = S+
+			data = 0.833333492279053
+		}
+		ENTRY
+		{
+			time = 119266.464394052
+			name = Phoebe Gaelan
+			code = M+
+			data = 
+		}
+		ENTRY
+		{
+			time = 136439.894490026
+			name = Phoebe Gaelan
+			code = EX+
+			data = 
+		}
+		ENTRY
+		{
+			time = 136442.934490025
+			name = Phoebe Gaelan
+			code = L+
+			data = 
+		}
+		ENTRY
+		{
+			time = 136512.454489988
+			name = Phoebe Gaelan
+			code = B+
+			data = 
+		}
+		ENTRY
+		{
+			time = 136568.274489959
+			name = Phoebe Gaelan
+			code = L+
+			data = 
+		}
+		ENTRY
+		{
+			time = 136795.132619176
+			name = Phoebe Gaelan
+			code = C+
+			data = 
+		}
+		ENTRY
+		{
+			time = 137061.366454578
+			name = Phoebe Gaelan
+			code = C+
+			data = 
+		}
+		ENTRY
+		{
+			time = 137061.366454578
+			name = Phoebe Gaelan
+			code = N5
+			data = 
+		}
+		ENTRY
+		{
+			time = 137082.526454567
+			name = Phoebe Gaelan
+			code = S+
+			data = 4.19999980926514
+		}
+		ENTRY
+		{
+			time = 137086.886454564
+			name = Phoebe Gaelan
+			code = S+
+			data = 2.09999990463257
+		}
+		ENTRY
+		{
+			time = 137563.16713076
+			name = Phoebe Gaelan
+			code = S+
+			data = 4.19999980926514
+		}
+		ENTRY
+		{
+			time = 137579.967130757
+			name = Phoebe Gaelan
+			code = S+
+			data = 2.09999990463257
+		}
+		ENTRY
+		{
+			time = 137579.967130757
+			name = Phoebe Gaelan
+			code = YR50
+			data = 
+		}
+		ENTRY
+		{
+			time = 137734.552787461
+			name = Phoebe Gaelan
+			code = C+
+			data = 
+		}
+		ENTRY
+		{
+			time = 137986.918119411
+			name = Phoebe Gaelan
+			code = S+
+			data = 0.138888835906982
+		}
+		ENTRY
+		{
+			time = 137986.918119411
+			name = Phoebe Gaelan
+			code = M+
+			data = 
+		}
 	}
 	SCENARIO
 	{
@@ -1762,7 +4037,7 @@ GAME
 				isResearched = True
 				researchState = 100
 				ignore = True
-				ContractsWeight = 30
+				ContractsWeight = 86
 			}
 			BODY
 			{
@@ -1770,7 +4045,7 @@ GAME
 				isResearched = True
 				researchState = 100
 				ignore = True
-				ContractsWeight = 30
+				ContractsWeight = 10
 			}
 			BODY
 			{
@@ -1818,7 +4093,7 @@ GAME
 				isResearched = True
 				researchState = 100
 				ignore = True
-				ContractsWeight = 30
+				ContractsWeight = 10
 			}
 			BODY
 			{
@@ -1826,7 +4101,7 @@ GAME
 				isResearched = True
 				researchState = 100
 				ignore = True
-				ContractsWeight = 30
+				ContractsWeight = 10
 			}
 			BODY
 			{
@@ -2235,13 +4510,13 @@ GAME
 			MassiveLaunches1 = False
 			MassiveLaunches2 = False
 			MassiveLaunches3 = False
-			PilotFocus1 = False
+			PilotFocus1 = True
 			PilotFocus2 = False
 			PilotFocus3 = False
-			EngineerFocus1 = False
+			EngineerFocus1 = True
 			EngineerFocus2 = False
 			EngineerFocus3 = False
-			ScientistFocus1 = False
+			ScientistFocus1 = True
 			ScientistFocus2 = False
 			ScientistFocus3 = False
 			BoldlyGo1 = False
@@ -2254,6 +4529,9 @@ GAME
 			LocalScience2 = False
 			LocalScience3 = False
 			Local Science I = True
+			Engineer Focus I = True
+			Scientist Focus I = True
+			Pilot Focus I = True
 		}
 		MSG_STRATEGIES
 		{
@@ -2290,11 +4568,11 @@ GAME
 				Item
 				{
 					VesselID = 
-					ID = 91ba939fef004547981139573de93eb1
+					ID = 04c476bb44b8433bb3f05156dea1c0e9
 					Name = Unmanned Launch Intervall
-					NotesStorage = Alarm Repeats\rthe VAB is ready to launch another vessel!
+					NotesStorage = Alarm Repeats\rThe VAB is ready for another unmanned launch!
 					TypeOfAlarm = Raw
-					AlarmTimeStorage = 110023.39816651074
+					AlarmTimeStorage = 196423.49807648043
 					AlarmMarginSecs = 0
 					Enabled = True
 					AlarmAction = Converted
@@ -2303,7 +4581,7 @@ GAME
 					XferOriginBodyName = 
 					XferTargetBodyName = 
 					RepeatAlarm = True
-					RepeatAlarmPeriodStorage = 18000
+					RepeatAlarmPeriodStorage = 108000
 					PlaySound = False
 					TargetObjectStorage = 
 					ContractGUIDStorage = 00000000-0000-0000-0000-000000000000
@@ -2325,7 +4603,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.3.0
-		UT = 92811.238076286434
+		UT = 138060.79811937275
 		activeVessel = 0
 		mapViewFiltering = -1026
 		commNetUIModeTracking = Network
@@ -2542,15 +4820,28 @@ GAME
 			gExperienced = 0
 			outDueToG = False
 			ToD = 0
-			idx = -1
+			idx = 0
 			extraXP = 0
 			CAREER_LOG
 			{
-				flight = 0
+				flight = 3
+				0 = ExitVessel,Gael
+				0 = Land,Gael
+				0 = Flight,Gael
+				0 = BoardVessel,Gael
+				0 = Recover
+				1 = Land,Gael
+				1 = Flight,Gael
+				1 = Recover
+				2 = ExitVessel,Gael
+				2 = Land,Gael
+				2 = Flight,Gael
+				2 = BoardVessel,Gael
+				2 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 0
+				flight = 3
 			}
 		}
 		KERBAL
@@ -2904,6 +5195,38 @@ GAME
 	}
 	MESSAGESYSTEM
 	{
-		flash = False
+		flash = True
+		MESSAGE
+		{
+			title = Contract Complete
+			message = <b>Conduct a focused temperature survey of Gael.</b>~n~nYour assistance in gathering thesetemperature measurements has been indispensable. Thank you!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  13,912   </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2   </color>~n~n
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Contract Complete
+			message = <b>Conduct a focused temperature survey of Gael.</b>~n~nYour assistance in gathering thesetemperature measurements has been indispensable. Thank you!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  13,776   </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2   </color>~n~n
+			color = 2
+			icon = 3
+			read = False
+		}
+		MESSAGE
+		{
+			title = Strategy Availability Changed
+			message = <b>New strategies available:</b>~n    Engineer Focus I~n    Scientist Focus I~n    Pilot Focus I~n
+			color = 3
+			icon = 4
+			read = True
+		}
+		MESSAGE
+		{
+			title = Contract Complete
+			message = <b>Conduct a focused atmospheric survey of Gael.</b>~n~nYour assistance in gathering theseatmospheric readings has been indispensable. Thank you!~n~n<b><color=#8BED8B>Completion Rewards:</color></b> ~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  13,776   </color>~n<color=#E0D503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2   </color>~n~n
+			color = 2
+			icon = 3
+			read = False
+		}
 	}
 }
