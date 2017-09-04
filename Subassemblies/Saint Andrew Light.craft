@@ -1,15 +1,15 @@
-ship = Prototype A1
+ship = Saint Andrew Light
 version = 1.3.0
-description = can carry ~500kg payloads to LGO
+description = 1t to GTO; 6° tilt
 type = None
-size = 2.32849312,10.6930161,2.32849288
+size = 2.03919888,12.2040882,1.86174154
 PART
 {
-	part = stackDecouplerMini_4294450746
+	part = stackDecouplerMini_4293623890
 	partName = Part
-	pos = -5.32954454,11.9418154,0.484169006
+	pos = -2.26571608,11.4818916,1.53136611
 	attPos = 0,0,0
-	attPos0 = -5.32954454,11.9418154,0.484169006
+	attPos0 = -2.26571608,11.4818916,1.53136611
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -20,15 +20,15 @@ PART
 	istg = 1
 	resPri = 0
 	dstg = 1
-	sidx = 0
+	sidx = 1
 	sqor = 0
 	sepI = 0
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = KzResizableFairingBaseRing_4293897176
-	attN = bottom,KzResizableFairingBaseRing_4293897176
+	link = KzResizableFairingBaseRing_4293623856
+	attN = bottom,KzResizableFairingBaseRing_4293623856
 	EVENTS
 	{
 	}
@@ -122,11 +122,11 @@ PART
 }
 PART
 {
-	part = KzResizableFairingBaseRing_4293897176
+	part = KzResizableFairingBaseRing_4293623856
 	partName = Part
-	pos = -5.32954454,11.6359062,0.484169006
-	attPos = 0,0,0
-	attPos0 = 0,-0.305909157,0
+	pos = -2.26571608,11.1759825,1.42661119
+	attPos = -2.98023224E-08,-0.861159325,-0.104754873
+	attPos0 = 0,0.555250168,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -144,13 +144,13 @@ PART
 	modCost = -61.8039017
 	modMass = 0.0381960981
 	modSize = 0,0,0
-	link = fuelTankSmallFlat_4293897124
-	link = KzProcFairingSide1_4293896820
-	link = KzProcFairingSide1_4294566088
-	attN = bottom,fuelTankSmallFlat_4293897124
-	attN = top,stackDecouplerMini_4294450746
-	attN = connect01,KzProcFairingSide1_4293896820
-	attN = connect02,KzProcFairingSide1_4294566088
+	link = fuelTankSmallFlat_4293623804
+	link = KzProcFairingSide2_4293857034
+	link = KzProcFairingSide2_4293619136
+	attN = bottom,fuelTankSmallFlat_4293623804
+	attN = top,stackDecouplerMini_4293623890
+	attN = connect01,KzProcFairingSide2_4293857034
+	attN = connect02,KzProcFairingSide2_4293619136
 	EVENTS
 	{
 	}
@@ -164,12 +164,12 @@ PART
 	{
 		name = ProceduralFairingBase
 		isEnabled = True
-		extraRadius = 0
+		extraRadius = 0.209999993
 		autoStrutSides = True
 		autoShape = True
-		manualMaxSize = 1.14999998
-		manualCylStart = 0
-		manualCylEnd = 0.230000004
+		manualMaxSize = 1.20909142
+		manualCylStart = 0.230000004
+		manualCylEnd = 0.430000007
 		stagingEnabled = True
 		EVENTS
 		{
@@ -187,7 +187,7 @@ PART
 		isEnabled = True
 		numNodes = 2
 		radius = 0.625
-		showInterstageNodes = True
+		showInterstageNodes = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -278,14 +278,14 @@ PART
 }
 PART
 {
-	part = fuelTankSmallFlat_4293897124
+	part = fuelTankSmallFlat_4293623804
 	partName = Part
-	pos = -5.32954454,11.3234062,0.484169006
+	pos = -2.26571608,10.8634825,1.42661119
 	attPos = 0,0,0
-	attPos0 = 0,-0.3125,0
-	rot = 0,0,0,1
+	attPos0 = -7.4505806E-09,-0.3125,0
+	rot = 0,0,3.72528985E-09,-1
 	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
+	attRot0 = 0,0,3.7252903E-09,-1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -300,10 +300,9 @@ PART
 	modCost = -2.38418579E-06
 	modMass = -1.39698386E-09
 	modSize = 0,0,0
-	link = adapterSmallMiniShort_4293897084
-	link = KzInterstageAdapter2_4294385900
-	attN = top,KzResizableFairingBaseRing_4293897176
-	attN = bottom,KzInterstageAdapter2_4294385900
+	link = fuelTankSmall_4293623764
+	attN = top,KzResizableFairingBaseRing_4293623856
+	attN = bottom,fuelTankSmall_4293623764
 	EVENTS
 	{
 	}
@@ -418,14 +417,14 @@ PART
 }
 PART
 {
-	part = adapterSmallMiniShort_4293897084
+	part = fuelTankSmall_4293623764
 	partName = Part
-	pos = -5.32954454,11.023406,0.484713018
-	attPos = 0,0,0.00264761224
-	attPos0 = 0,-0.300000072,-0.00210359506
-	rot = -0.999961972,-1.86264515E-09,-0.00872639753,-5.14555722E-08
-	attRot = 0.99999994,0,0,0
-	attRot0 = -0.999961972,-1.86264515E-09,-0.00872639753,-5.14701242E-08
+	pos = -2.26571608,9.99573231,1.42661119
+	attPos = 0,0,0
+	attPos0 = -2.33370834E-08,-0.867749572,0
+	rot = 0,0,7.45057971E-09,-1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,-3.7252903E-09,1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -436,15 +435,13 @@ PART
 	sidx = -1
 	sqor = -1
 	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
+	attm = 0
+	modCost = -4.76837158E-06
+	modMass = -2.79396772E-09
 	modSize = 0,0,0
-	link = radialEngineMini_4294308642
-	link = radialEngineMini_4294308296
-	link = microEngine_4293897054
-	srfN = ,fuelTankSmallFlat_4293897124
-	attN = top,microEngine_4293897054
+	link = liquidEngine3_4293623722
+	attN = top,fuelTankSmallFlat_4293623804
+	attN = bottom,liquidEngine3_4293623722
 	EVENTS
 	{
 	}
@@ -471,81 +468,14 @@ PART
 		{
 		}
 	}
-}
-PART
-{
-	part = radialEngineMini_4294308642
-	partName = Part
-	pos = -5.15648317,10.8484058,0.487733841
-	attPos = 1.49011612E-08,-4.47034836E-07,-2.98022726E-08
-	attPos0 = 0.173087731,0.175000429,-1.95577741E-08
-	rot = 6.56582415E-08,0.7162925,-6.98491931E-08,-0.697800219
-	attRot = -0.49999994,-0.49999994,-0.49999994,-0.49999994
-	attRot0 = 0.704024196,-3.02679837E-08,-0.710176051,3.05008143E-08
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 3
-	resPri = 0
-	dstg = 2
-	sidx = 0
-	sqor = 2
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = radialEngineMini_4294308296
-	srfN = srfAttach,adapterSmallMiniShort_4293897084
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleB9PartSwitch
 		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
+		currentSubtypeIndex = 0
 		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
+		currentSubtypeName = LF/O
+		moduleID = fuelSwitch
 		EVENTS
 		{
 		}
@@ -558,45 +488,29 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleGimbal
+		name = ModuleCryoTank
 		isEnabled = True
-		gimbalLock = False
-		gimbalLimiter = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		gimbalActive = False
+		LastUpdateTime = 0
+		CoolingEnabled = False
+		BoiloffOccuring = False
 		stagingEnabled = True
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
+			EnableAction
+			{
+				actionGroup = None
+			}
+			DisableAction
+			{
+				actionGroup = None
+			}
 			ToggleAction
 			{
 				actionGroup = None
 			}
-			LockAction
-			{
-				actionGroup = None
-			}
-			FreeAction
-			{
-				actionGroup = None
-			}
-			TogglePitchAction
-			{
-				actionGroup = None
-			}
-			ToggleYawAction
-			{
-				actionGroup = None
-			}
-			ToggleRollAction
-			{
-				actionGroup = None
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -604,11 +518,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
+		name = ModuleB9PartInfo
 		isEnabled = True
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -619,17 +531,39 @@ PART
 		{
 		}
 	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 90
+		maxAmount = 90
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 110
+		maxAmount = 110
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
 }
 PART
 {
-	part = radialEngineMini_4294308296
+	part = liquidEngine3_4293623722
 	partName = Part
-	pos = -5.50260592,10.8484049,0.481692255
+	pos = -2.26571608,9.16986179,1.42661119
 	attPos = 0,0,0
-	attPos0 = -0.173087746,0.175000548,3.44589353E-08
-	rot = 7.4505806E-09,-0.697800219,4.65661643E-09,-0.7162925
-	attRot = -0.49999994,-0.49999994,-0.49999994,-0.49999994
-	attRot0 = -0.710176051,3.11993027E-08,-0.704024136,2.95694882E-08
+	attPos0 = 0,-0.825872421,0
+	rot = 0,0,7.45057971E-09,-1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -638,161 +572,15 @@ PART
 	resPri = 0
 	dstg = 2
 	sidx = 0
-	sqor = 2
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = radialEngineMini_4294308642
-	srfN = srfAttach,adapterSmallMiniShort_4293897084
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleGimbal
-		isEnabled = True
-		gimbalLock = False
-		gimbalLimiter = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		gimbalActive = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-			LockAction
-			{
-				actionGroup = None
-			}
-			FreeAction
-			{
-				actionGroup = None
-			}
-			TogglePitchAction
-			{
-				actionGroup = None
-			}
-			ToggleYawAction
-			{
-				actionGroup = None
-			}
-			ToggleRollAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = microEngine_4293897054
-	partName = Part
-	pos = -5.32954454,10.835906,0.479700834
-	attPos = -8.74740363E-05,1.49011612E-08,0.00501142861
-	attPos0 = 7.4505806E-09,0.187499925,0
-	rot = -5.14555722E-08,-0.00872639753,1.86264504E-09,0.999961972
-	attRot = 0,0,0,1
-	attRot0 = 1,0,0,0
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 3
-	resPri = 0
-	dstg = 2
-	sidx = 1
 	sqor = 2
 	sepI = 0
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,adapterSmallMiniShort_4293897084
+	link = stackDecoupler_4293863930
+	attN = top,fuelTankSmall_4293623764
+	attN = bottom,stackDecoupler_4293863930
 	EVENTS
 	{
 	}
@@ -804,7 +592,7 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleEngines
 		isEnabled = True
 		staged = False
 		flameout = False
@@ -838,7 +626,105 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		animState = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = False
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
 		isEnabled = True
 		stagingEnabled = True
 		EVENTS
@@ -871,14 +757,14 @@ PART
 }
 PART
 {
-	part = KzInterstageAdapter2_4294385900
+	part = stackDecoupler_4293863930
 	partName = Part
-	pos = -5.32954454,10.210907,0.484169006
+	pos = -2.26571608,8.63199615,1.42661119
 	attPos = 0,0,0
-	attPos0 = -1.86264515E-09,-1.31249976,0
-	rot = 0,0,0,-1
+	attPos0 = 8.01482258E-09,-0.537865639,0
+	rot = 0,0,0,1
 	attRot = 0,0,0,1
-	attRot0 = 0,0,0,-1
+	attRot0 = 0,0,-7.4505806E-09,-1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -886,18 +772,16 @@ PART
 	istg = 3
 	resPri = 0
 	dstg = 3
-	sidx = 2
+	sidx = 1
 	sqor = 2
 	sepI = 2
 	attm = 0
-	modCost = -61.8039017
-	modMass = 0.0381960981
+	modCost = 0
+	modMass = 0
 	modSize = 0,0,0
-	link = solidBooster1-1_4294362298
-	link = KzProcFairingFuselage2_4293634668
-	attN = bottom,solidBooster1-1_4294362298
-	attN = top1,fuelTankSmallFlat_4293897124
-	attN = connect01,KzProcFairingFuselage2_4293634668
+	link = solidBooster1-1_4293863886
+	attN = bottom,solidBooster1-1_4293863886
+	attN = top,liquidEngine3_4293623722
 	EVENTS
 	{
 	}
@@ -906,65 +790,6 @@ PART
 	}
 	PARTDATA
 	{
-	}
-	MODULE
-	{
-		name = ProceduralFairingAdapter
-		isEnabled = True
-		topNodeDecouplesWhenFairingsGone = False
-		extraHeight = 0
-		baseSize = 1.25
-		topSize = 1.25
-		height = 0.800000072
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ProceduralFairingBase
-		isEnabled = True
-		extraRadius = 0
-		autoStrutSides = True
-		autoShape = True
-		manualMaxSize = 1.14999998
-		manualCylStart = 0
-		manualCylEnd = 0.800000072
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KzNodeNumberTweaker
-		isEnabled = True
-		numNodes = 1
-		radius = 0.625
-		showInterstageNodes = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
 	}
 	MODULE
 	{
@@ -982,21 +807,6 @@ PART
 			{
 				actionGroup = None
 			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KzFairingBaseShielding
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -1032,6 +842,21 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = FMRS_PM
 		isEnabled = True
 		stagingEnabled = True
@@ -1050,14 +875,14 @@ PART
 }
 PART
 {
-	part = solidBooster1-1_4294362298
+	part = solidBooster1-1_4293863886
 	partName = Part
-	pos = -5.32954454,6.29090834,0.484169006
+	pos = -2.26571631,4.57900238,1.42661119
 	attPos = 0,0,0
-	attPos0 = -3.87430088E-09,-3.92000055,0
-	rot = 0,0,9.31322575E-10,1
+	attPos0 = 0,-4.05299473,0
+	rot = 0,0,0,1
 	attRot = 0,0,0,1
-	attRot0 = 0,0,-9.31322575E-10,-1
+	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -1072,12 +897,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = launchClamp1_4294320906
-	link = basicFin_4293769522
-	link = basicFin_4293769312
-	link = basicFin_4293769270
-	link = basicFin_4293769228
-	attN = top,KzInterstageAdapter2_4294385900
+	link = basicFin_4293863814
+	link = basicFin_4293863782
+	link = basicFin_4293863750
+	link = launchClamp1_4293863718
+	attN = top,stackDecoupler_4293863930
 	EVENTS
 	{
 	}
@@ -1096,7 +920,7 @@ PART
 		EngineIgnited = False
 		engineShutdown = False
 		currentThrottle = 0
-		thrustPercentage = 65.5
+		thrustPercentage = 100
 		manuallyOverridden = False
 		stagingEnabled = True
 		EVENTS
@@ -1187,7 +1011,7 @@ PART
 	RESOURCE
 	{
 		name = SolidFuel
-		amount = 791.99997901916504
+		amount = 880
 		maxAmount = 880
 		flowState = True
 		isTweakable = True
@@ -1198,12 +1022,219 @@ PART
 }
 PART
 {
-	part = launchClamp1_4294320906
+	part = basicFin_4293863814
 	partName = Part
-	pos = -5.32954454,5.38111973,-0.944741011
+	pos = -2.26571631,1.47791862,0.815517604
 	attPos = 0,0,0
-	attPos0 = -9.68575478E-08,-0.909781933,-1.42891014
-	rot = -5.55111512E-17,-2.92688966E-08,-9.31322575E-10,-1
+	attPos0 = -5.21540642E-08,-3.10107899,-0.61109364
+	rot = 0,0.707106829,0,-0.707106829
+	attRot = 0,0,0,1
+	attRot0 = 0,0.707106829,0,-0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = basicFin_4293863782
+	sym = basicFin_4293863750
+	srfN = srfAttach,solidBooster1-1_4293863886
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLiftingSurface
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = basicFin_4293863782
+	partName = Part
+	pos = -2.7949388,1.47792244,1.73215818
+	attPos = 0,0,0
+	attPos0 = -0.529222608,-3.10107899,0.305546939
+	rot = -1.86264515E-09,-0.258819103,7.4505806E-09,-0.965925872
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.258819103,0,-0.965925872
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = basicFin_4293863814
+	sym = basicFin_4293863750
+	srfN = srfAttach,solidBooster1-1_4293863886
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLiftingSurface
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = basicFin_4293863750
+	partName = Part
+	pos = -1.73649335,1.47791862,1.73215795
+	attPos = 0,0,0
+	attPos0 = 0.529222727,-3.10107899,0.305546761
+	rot = -7.4505806E-09,-0.965925872,2.79396772E-09,-0.258819014
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.965925872,0,-0.258819014
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = basicFin_4293863814
+	sym = basicFin_4293863782
+	srfN = srfAttach,solidBooster1-1_4293863886
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLiftingSurface
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = launchClamp1_4293863718
+	partName = Part
+	pos = -2.26571608,4.99646425,-0.00393044949
+	attPos = 0,0,0
+	attPos0 = -9.68575478E-08,0.417464256,-1.43054163
+	rot = 2.22044552E-16,-2.92689073E-08,0,-1
 	attRot = 0,0,0,1
 	attRot0 = 0,-2.92689055E-08,0,-1
 	mir = 1,1,1
@@ -1220,7 +1251,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	srfN = srfAttach,solidBooster1-1_4294362298
+	srfN = srfAttach,solidBooster1-1_4293863886
 	EVENTS
 	{
 	}
@@ -1234,10 +1265,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 2.39429188
-		height = 6.04127073
+		scaleFactor = 2.24184513
+		height = 5.65661573
 		stagingEnabled = True
-		towerRot = 5.55111512E-17,2.92688966E-08,9.31322575E-10,-1
+		towerRot = -2.22044552E-16,2.92689073E-08,0,-1
 		EVENTS
 		{
 		}
@@ -1319,373 +1350,14 @@ PART
 }
 PART
 {
-	part = basicFin_4293769522
+	part = KzProcFairingSide2_4293857034
 	partName = Part
-	pos = -5.32954454,3.19548225,-0.130077302
+	pos = -1.64071608,10.7909822,1.42661119
 	attPos = 0,0,0
-	attPos0 = -5.04691684E-08,-3.09542751,-0.614246368
-	rot = 2.32830666E-09,-0.707106769,0,0.707106829
-	attRot = 0,0,0,1
-	attRot0 = 1.66976211E-09,-0.707106769,-6.58544552E-10,0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 4
-	resPri = 0
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = basicFin_4293769312
-	sym = basicFin_4293769270
-	sym = basicFin_4293769228
-	srfN = srfAttach,solidBooster1-1_4294362298
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleLiftingSurface
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = basicFin_4293769312
-	partName = Part
-	pos = -5.94379091,3.19548225,0.484169006
-	attPos = 0,0,0
-	attPos0 = -0.614246368,-3.09542751,1.49011612E-08
-	rot = 6.70032085E-10,3.28204806E-08,-9.31322575E-10,1
-	attRot = 0,0,0,1
-	attRot0 = 6.7003203E-10,3.28204912E-08,-1.86264515E-09,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 4
-	resPri = 0
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = basicFin_4293769522
-	sym = basicFin_4293769270
-	sym = basicFin_4293769228
-	srfN = srfAttach,solidBooster1-1_4294362298
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleLiftingSurface
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = basicFin_4293769270
-	partName = Part
-	pos = -5.32954454,3.19548225,1.09841537
-	attPos = 0,0,0
-	attPos0 = 9.85424435E-08,-3.09542751,0.614246368
-	rot = -1.86264515E-09,0.707106829,0,0.707106709
-	attRot = 0,0,0,1
-	attRot0 = -1.2041006E-09,0.707106829,-6.58544441E-10,0.707106709
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 4
-	resPri = 0
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = basicFin_4293769522
-	sym = basicFin_4293769312
-	sym = basicFin_4293769228
-	srfN = srfAttach,solidBooster1-1_4294362298
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleLiftingSurface
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = basicFin_4293769228
-	partName = Part
-	pos = -4.71529818,3.19547844,0.484168917
-	attPos = 0,0,0
-	attPos0 = 0.614246309,-3.09542847,-9.12696123E-08
-	rot = -2.79396772E-09,1,-6.7003203E-10,-5.15044718E-08
-	attRot = 0,0,0,1
-	attRot0 = -1.86264515E-09,1,-6.70031974E-10,-5.15044718E-08
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 4
-	resPri = 0
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = basicFin_4293769522
-	sym = basicFin_4293769312
-	sym = basicFin_4293769270
-	srfN = srfAttach,solidBooster1-1_4294362298
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleLiftingSurface
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = KzProcFairingFuselage2_4293634668
-	partName = Part
-	pos = -4.70454454,9.82590675,0.484169006
-	attPos = 0,0,0
-	attPos0 = 0.62499994,-0.384999454,0
-	rot = 0,0,0,-1
+	attPos0 = 0.625,-0.385000229,0
+	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 3
-	resPri = 0
-	dstg = 4
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 0
-	modCost = -56.646019
-	modMass = 0.0144513268
-	modSize = 0,0,0
-	attN = connect,KzInterstageAdapter2_4294385900
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ProceduralFairingSide
-		isEnabled = True
-		numSegs = 24
-		numSideParts = 1
-		baseRad = 0.574999988
-		maxRad = 0.574999988
-		cylStart = 0
-		cylEnd = 0.800000072
-		topRad = 0.574999988
-		inlineHeight = 0.800000072
-		sideThickness = 0.049999997
-		meshPos = (-0.62499994, 0.384999394, 0)
-		meshRot = (0, 0, 0, 1)
-		shapeLock = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = KzProcFairingSide1_4293896820
-	partName = Part
-	pos = -4.70454454,11.250906,0.484169006
-	attPos = 0,0,0
-	attPos0 = 0.62499994,-0.385000229,0
-	rot = 0,0,0,-1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,-1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -1697,11 +1369,11 @@ PART
 	sqor = 1
 	sepI = 0
 	attm = 0
-	modCost = -52.4732895
-	modMass = 0.00950534176
+	modCost = -49.1615067
+	modMass = 0.0101676984
 	modSize = 0,0,0
-	sym = KzProcFairingSide1_4294566088
-	attN = connect,KzResizableFairingBaseRing_4293897176
+	sym = KzProcFairingSide2_4293619136
+	attN = connect,KzResizableFairingBaseRing_4293623856
 	EVENTS
 	{
 	}
@@ -1718,14 +1390,14 @@ PART
 		numSegs = 12
 		numSideParts = 2
 		baseRad = 0.574999988
-		maxRad = 0.574999988
-		cylStart = 0
-		cylEnd = 0.230000004
+		maxRad = 0.604545712
+		cylStart = 0.230000004
+		cylEnd = 0.430000007
 		topRad = 0
 		inlineHeight = 0
 		sideThickness = 0.049999997
-		meshPos = (-0.62499994, 0.385000259, 0)
-		meshRot = (0, 0, 0, -1)
+		meshPos = (-0.62500006, 0.385000229, 0)
+		meshRot = (0, 0, 0, 1)
 		shapeLock = False
 		stagingEnabled = True
 		EVENTS
@@ -1780,14 +1452,14 @@ PART
 }
 PART
 {
-	part = KzProcFairingSide1_4294566088
+	part = KzProcFairingSide2_4293619136
 	partName = Part
-	pos = -5.95454454,11.250906,0.484168947
+	pos = -2.89071608,10.7909822,1.42661119
 	attPos = 0,0,0
-	attPos0 = -0.625,-0.38500011,-5.49480319E-08
-	rot = 9.31322575E-10,-1,-2.77555756E-17,4.37113847E-08
+	attPos0 = -0.625,-0.385000229,-5.96046448E-08
+	rot = 0,1,0,-4.37113883E-08
 	attRot = 0,0,0,1
-	attRot0 = 9.31322575E-10,-1,-2.77555756E-17,4.37113847E-08
+	attRot0 = 0,1,0,-4.37113883E-08
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -1799,11 +1471,11 @@ PART
 	sqor = 1
 	sepI = 0
 	attm = 0
-	modCost = -52.4732895
-	modMass = 0.00950534176
+	modCost = -49.1615067
+	modMass = 0.0101676984
 	modSize = 0,0,0
-	sym = KzProcFairingSide1_4293896820
-	attN = connect,KzResizableFairingBaseRing_4293897176
+	sym = KzProcFairingSide2_4293857034
+	attN = connect,KzResizableFairingBaseRing_4293623856
 	EVENTS
 	{
 	}
@@ -1820,14 +1492,14 @@ PART
 		numSegs = 12
 		numSideParts = 2
 		baseRad = 0.574999988
-		maxRad = 0.574999988
-		cylStart = 0
-		cylEnd = 0.230000004
+		maxRad = 0.604545712
+		cylStart = 0.230000004
+		cylEnd = 0.430000007
 		topRad = 0
 		inlineHeight = 0
 		sideThickness = 0.049999997
-		meshPos = (-0.625000119, 0.385000139, -1.09587262E-07)
-		meshRot = (1.29538271E-17, -3.55271368E-15, -9.31322575E-10, -1)
+		meshPos = (-0.624999762, 0.38499999, -1.14243804E-07)
+		meshRot = (0, 0, 0, 1)
 		shapeLock = False
 		stagingEnabled = True
 		EVENTS
